@@ -3,3 +3,32 @@
     margin: 0;
     box-sizing: border-box;
 }
+.carouselTag{
+    font-size: 80px;
+    font-weight:500            
+}
+.carouselTagg{
+    font-size: 60px;
+    font-weight:500            
+}
+@media screen and (max-width:688px) {
+    .carouselTag{
+    font-size: 60px;
+    font-weight:500;
+}
+.carouselTagg{
+    font-size: 50px;
+    font-weight:500            
+}
+.meeee{
+    background-image: url("https://img.freepik.com/free-photo/new-pair-white-sneakers-isolated-white_93675-133039.jpg?w=826&t=st=1690474735~exp=1690475335~hmac=8f7c1680a55d54f1169a8811a762ab1baaea8eeb96244c9b3f5190f41ce0e550");            
+
+}
+.mee{
+    background-image: url('https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/franchise/latitude/laptop-latitude-family-franchise-page-module-4-1920x1440.png?qlt=95&fit=constrain,1&hei=1440&wid=1920&fmt=png-alpha');
+
+}
+.me{
+    background-image: url('https://www.electronic4you.at/media/catalog/product/cache/0/image/1500x/9df78eab33525d08d6e5fb8d27136e95/2/3/232616.jpg');
+}
+}
