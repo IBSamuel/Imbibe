@@ -11,6 +11,11 @@
     font-size: 60px;
     font-weight:500            
 }
+.colored{
+    border-radius: 4px;
+color: var(--secondary-2, #DB4444);
+border: 0;
+}
 @media screen and (max-width:688px) {
     .carouselTag{
     font-size: 60px;
