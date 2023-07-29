@@ -16,6 +16,12 @@
 color: var(--secondary-2, #DB4444);
 border: 0;
 }
+.oranged{
+    background-color: rgba(219, 68, 68, 1);
+}
+.orangedText{
+    color: rgba(219, 68, 68, 1);
+}
 @media screen and (max-width:688px) {
     .carouselTag{
     font-size: 60px;
