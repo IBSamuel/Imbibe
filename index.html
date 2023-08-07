@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,9 +20,16 @@
   <nav class="navbar navbar-expand-lg bg-white shadow-sm">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Imbibe</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-toggles2 colored"></i>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll border-white " aria-expanded="false" aria-label="Toggle navigation">
+        <div id="menuToggle">
+          <input id="checkbox" type="checkbox">
+          <label class="toggle" for="checkbox">
+            <div class="bar bar--top"></div>
+            <div class="bar bar--middle"></div>
+            <div class="bar bar--bottom"></div>
+          </label>
+        </div>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav fw-semibold mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
@@ -53,8 +61,8 @@
   <!-- categories -->
   <!-- Offcanvas -->
   <div class="">
-    <button class="shadow-sm bg-white border-0 fixed-start w-50 fs-5 m-2 orangedText" type="button" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    <button class="shadow-sm bg-white border-0 fixed-start w-50 fs-5 m-2 orangedText" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
       Categories <i class="bi bi-caret-right-fill"></i><i class="bi bi-caret-right-fill"></i>
     </button>
 
@@ -103,59 +111,59 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
-                <div class="col-lg-5 col-sm-12 m-2 mee">
-                    <br>
-                    <span class="h2"><i class="bi bi-apple"></i> Apple</span>
-                    <br>
-                    <br>
-                    <p class="carouselTag">Up to 10% off Voucher</p>
-                    <br><br>
-                    <a href="" class="nav-link">
-                      <p class="m-3 btn shadow-sm bg-light">Shop now</p>
-                    </a>
-                  </div>
-                  <div class="col-6 d-none d-md-block ">
-                    <img class="w-75"
-                      src="https://www.apple.com/v/ipad-10.9/b/images/overview/hero/hero__ecv967jz1y82_large.jpg" alt="">
-                  </div>
+              <div class="col-lg-5 col-sm-12 m-2 mee">
+                <br>
+                <span class="h2"><i class="bi bi-apple"></i> Apple</span>
+                <br>
+                <br>
+                <p class="carouselTag">Up to 10% off Voucher</p>
+                <br><br>
+                <a href="" class="nav-link">
+                  <p class="m-3 btn shadow-sm bg-light">Shop now</p>
+                </a>
+              </div>
+              <div class="col-6 d-none d-md-block ">
+                <img class="w-75"
+                  src="https://www.apple.com/v/ipad-10.9/b/images/overview/hero/hero__ecv967jz1y82_large.jpg" alt="">
+              </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-                <div class="col-lg-5 col-sm-12 m-2 meeee">
-                    <span class="h2"></i> </span>
-                    <br>
-                    <br>
-                    <p class="carouselTag m-3">Discover Your Perfect Fit</p>
-      
-                    <a href="" class="nav-link">
-                      <p class="m-3 btn shadow-sm bg-light">Shop now</p>
-                    </a>
-                  </div>
-                  <div class="col-6 d-none d-md-block">
-                    <img class=""
-                      src="https://img.freepik.com/free-photo/new-pair-white-sneakers-isolated-white_93675-133039.jpg?w=826&t=st=1690474735~exp=1690475335~hmac=8f7c1680a55d54f1169a8811a762ab1baaea8eeb96244c9b3f5190f41ce0e550"
-                      alt="">
-                  </div>
+              <div class="col-lg-5 col-sm-12 m-2 meeee">
+                <span class="h2"></i> </span>
+                <br>
+                <br>
+                <p class="carouselTag m-3">Discover Your Perfect Fit</p>
+
+                <a href="" class="nav-link">
+                  <p class="m-3 btn shadow-sm bg-light">Shop now</p>
+                </a>
+              </div>
+              <div class="col-6 d-none d-md-block">
+                <img class=""
+                  src="https://img.freepik.com/free-photo/new-pair-white-sneakers-isolated-white_93675-133039.jpg?w=826&t=st=1690474735~exp=1690475335~hmac=8f7c1680a55d54f1169a8811a762ab1baaea8eeb96244c9b3f5190f41ce0e550"
+                  alt="">
+              </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-                <div class="col-6 d-none d-md-block">
-                    <img class="" src="https://res-5.cloudinary.com/grover/image/upload/v1684754401/gomehqtjcc5o6orqw5ar.png"
-                      alt="">
-                  </div>
-                  <div class="col-lg-5 col-sm-12 m-2 me">
-                    <span class="h2"></i> </span>
-                    <br>
-                    <br>
-                    <p class="carouselTagg m-3">Tech Marvels for the Modern World</p>
-      
-                    <a href="" class="nav-link">
-                      <p class="m-3 btn shadow-sm bg-light">Shop now</p>
-                    </a>
-      
-                  </div>
+              <div class="col-6 d-none d-md-block">
+                <img class=""
+                  src="https://res-5.cloudinary.com/grover/image/upload/v1684754401/gomehqtjcc5o6orqw5ar.png" alt="">
+              </div>
+              <div class="col-lg-5 col-sm-12 m-2 me">
+                <span class="h2"></i> </span>
+                <br>
+                <br>
+                <p class="carouselTagg m-3">Tech Marvels for the Modern World</p>
+
+                <a href="" class="nav-link">
+                  <p class="m-3 btn shadow-sm bg-light">Shop now</p>
+                </a>
+
+              </div>
             </div>
           </div>
         </div>
@@ -168,7 +176,132 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <h1>me</h1>
+      <!-- Todays -->
+      <div class="m-3">
+        <span class="oranged rounded orangedText p-1"><small>sj</small></span>
+        <span class="orangedText fw-semibold">Today's</span>
+      </div>
+      <!-- Flash Sales -->
+      <div class="row m-3">
+        <div class="col-lg-3">
+          <span class="h1">Flash Sales</span>
+        </div>
+        <div class="col-lg-8 row">
+          <div class="text-center col-2 m-2 shadow-sm">
+            <small class="fw-semibold">Days</small>
+            <br>
+            <small class="h3">03</small>
+          </div>
+          <div class="text-center col-2 m-2 shadow-sm">
+            <small class="fw-semibold">Hours</small>
+            <br>
+            <small class="h3">23</small>
+          </div>
+          <div class="text-center col-2 m-2 shadow-sm">
+            <small class="fw-semibold">Minutes</small>
+            <br>
+            <small class="h3">19</small>
+          </div>
+          <div class="text-center col-2 m-2 shadow-sm">
+            <small class="fw-semibold">Seconds </small>
+            <br>
+            <small class="h3">56</small>
+          </div>
+        </div>
+        <div class="col-lg-"></div>
+      </div>
+      <!-- Card Section -->
+      <div class="p-3 row shadow gap-1 m-2" id="allcards">
+      </div>
+
 </body>
+<script>
+  allProduct = [
+    {
+      name: "WEYON 19 Inches LED TV (19TV) - Black +1 Year Warranty",
+      imageSrc: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/39/4447531/5.jpg?8888",
+      price: 37732,
+      description1: `<div>Key Feautures </div>
+      <ul>
+        <li>Model：19TV</li>
+        <li>Panel size: 19</li>
+        <li>Excellent Picture Quality （1366*768)</li>
+        <li> Excellent Sound Quality (Built in 2 pcs 3W Speaker) </li>
+        <li>Aspect Ratio: 16:9</li>
+        <li>Refresh Rate: 60Hz</li>
+        <li>Net Weight （With The Base）3.2 KG</li>
+        <li>HDMI: 1</li>
+        <li>USB: 1<li>
+        <li>Warranty duration: 1 year</li>
+        <li>Life Time >30000h</li>
+        <li>Power Consumption-TV ON ≤ 28W</li>
+        <li>Power Consumption-Standby ≤ 1W</li>
+        </ul>`,
+      specification: `<p class="fw-semibold">WEYON 19 inches LED TV  +1 Year Warranty - Black 19TV</p>
+        <p>Clear, detailed picture:
+          
+          See every image as the director intended with enriched colors.
+          
+          Ultra clean view:
+          
+          Analyzing original content with an advanced algorithm, Ultra Clean View gives you higher-quality images with less distortion. Enjoy the clear picture.
+
+          
+          HD picture quality:
+          LED distributes the LED lights on the back of the panel so that the backlight can be evenly transmitted to the entire screen, the brightness and color gamut are guaranteed, the backlight rendering image is more accurate, and the picture details are more delicate and realistic. LED technology allows you to go beyond the screen into a fully immersive world. </p>`,
+        },
+    {
+      name: "Oraimo 20000mAh Power-Bank OPB-P208DN",
+      imageSrc: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/29/3531721/3.jpg?8401",
+      price: 12000,
+      description1: `<div>Key Feautures </div>
+      <ul>
+        <li>Large LED Display -Battery at a Glance2.</li>
+        <li>4A Dual Output & Input-Efficient Charging</li>
+        <li> Widely Compatible -Support Multiple Ports </li>
+        <li> Multi-protection System-Safe and Reliable</li>
+        <li>Anti-scratch Texture-Durable and Comfortable</li>
+        </ul>`,
+      specification: `<p class="fw-semibold">Large LED Display Battery at a Glance</p>
+        <p>The data is accurate to 1% which can be seen at any time clearly. Say goodbye to the no electricity dilemma, let's keep everything under control.</p>
+ 
+        <p>2.4A Dual Output & Input-Efficient Charging It contains two AniFast fast charging ports and supports dual input and output, which can charge multiple devices at the same time- without sacrificing charging speed.</p>
+
+        <p>Widely Compatible -Support Multiple Ports AniFast charging technology supports compatible ports of multiple brands and devices. Mobile phones, tablets, and computers can be charged at the same time extremely fast.</p>
+
+ 
+        <p>Multi-protection System-Safe and Reliable It adopts high-quality batteries and has a complete after-sales system. 365-day warranty provides you with a reliable  shopping experience.</p>
+
+        <p>Anti-scratch Texture-Durable and ComfortableThe unique anti scratch design can effectively prevent stains and scratches, which better protects the appearance and provides a comfortable grip.</p>`,
+    },
+
+
+  ]
+  const me = () => {
+    allProduct.map((wholecard, index) => {
+      allcards.innerHTML += `
+    <div class="shadow-sm mb-2 mx-auto card border-0" style="width: 18rem;">
+  <img src="${wholecard.imageSrc}" class="card-img-top mx-auto" alt="...">
+  <div class="card-body">
+    <p class="card-title"><small class="fw-semibold">${wholecard.name}</small></p>
+    <h6 class="card-title">₦${wholecard.price}</h6>
+    <p class="fw-semibold">
+      <small>Imbibe</small>
+      </p>
+    
+    <a href="#" class=" orangedTextNew" onclick="add(${index})"><i class="bi bi-view-list"></i></a>
+  </div>
+</div>`
+
+    })
+  }
+  me()
+  const add=(x)=>{
+    let cardData = allProduct[x]
+    console.log(cardData)
+    JSON.stringify(cardData)
+    localStorage.setItem("productData",JSON.stringify(cardData))
+  }
+</script>
 
 </html>

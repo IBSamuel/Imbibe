@@ -43,3 +43,10 @@ border: 0;
     background-image: url('https://www.electronic4you.at/media/catalog/product/cache/0/image/1500x/9df78eab33525d08d6e5fb8d27136e95/2/3/232616.jpg');
 }
 }
+  .orangedTextNew{
+    color: #ffff;
+    background-color: #DB4444;
+    text-decoration: none;
+    padding:5px;
+    border-radius: 5px;
+  }
