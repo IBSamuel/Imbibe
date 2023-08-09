@@ -48,8 +48,20 @@ border: 0;
     background-image: url('https://www.electronic4you.at/media/catalog/product/cache/0/image/1500x/9df78eab33525d08d6e5fb8d27136e95/2/3/232616.jpg');
 }
 }
-.sallers:hover{
-    background: #DB4444;
-    color:white ;
-    transform: scale(0.3);
+
+.sallers{
+    border-radius: 5px;
 }
+/* Define the initial styling */
+.sallers { /* Initial color */
+    transition: background-color 0.90s ease; /* Smooth transition effect */
+  }
+  
+  /* Apply the color transform on hover */
+  .sallers:hover {
+    color: aliceblue;
+    background-color: #e74c3c; /* New color on hover */
+  }
+  .hover:hover{
+    color:#DB4444
+  }
