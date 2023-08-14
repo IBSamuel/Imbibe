@@ -218,73 +218,49 @@
 <script>
   allProduct = [
     {
-      name: "WEYON 19 Inches LED TV (19TV) - Black +1 Year Warranty",
+      name: "Power Banks 20000 MAh Utra Slim Portable Fast Charger (ACE ELEC)",
+      shortname:"Power Banks 20000 MAh Utra...",
       imageSrc: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/39/4447531/5.jpg?8888",
-      price: 37732,
-      description1: `<div>Key Feautures </div>
+      price: 6500,
+      category:"Mobile phone Accessories",
+      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/4.jpg?3620",
+      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/1.jpg?3620",
+      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/6.jpg?3620",
+      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/7.jpg?3620",
+      reviews:"⭐⭐⭐⭐ 1226 reviews",
+      shortDetails:"PowerCore Slim 20000, Ultra Slim Portable Charger, Compact 20000mAh External Battery, High-Speed PowerIQ Charging Technology for Mobile phones, ipad, and more The New Generation Power-Bank P2W (20000mAh) is light, convenient and portable.",
+      specifications: `<div>Key Specifications </div>
       <ul>
-        <li>Model：19TV</li>
-        <li>Panel size: 19</li>
-        <li>Excellent Picture Quality （1366*768)</li>
-        <li> Excellent Sound Quality (Built in 2 pcs 3W Speaker) </li>
-        <li>Aspect Ratio: 16:9</li>
-        <li>Refresh Rate: 60Hz</li>
-        <li>Net Weight （With The Base）3.2 KG</li>
-        <li>HDMI: 1</li>
-        <li>USB: 1<li>
-        <li>Warranty duration: 1 year</li>
-        <li>Life Time >30000h</li>
-        <li>Power Consumption-TV ON ≤ 28W</li>
-        <li>Power Consumption-Standby ≤ 1W</li>
+        <ul class="list-group">
+  <li class="list-group-item">Model: P2W</li>
+  <li class="list-group-item">Material: Fireproof ABS+PC</li>
+  <li class="list-group-item">Capacity: 20000mAh</li>
+  <li class="list-group-item">Input interface: Micro USB 5V 2.1A</li>
+  <li class="list-group-item">Output USB: 2 USB (USB-A) 5V 2.1A</li>
+  <li class="list-group-item">Dimensions: 135 * 65 * 25mm</li>
+  <li class="list-group-item">Color: Black/White</li>
+</ul>
+<ul class="list-group mt-5">
+  <li class="list-group-item">SKU: FL585EA3CG6JHNAFAMZ</li>
+  <li class="list-group-item">Product Line: Zeemak Ltd - AC</li>
+  <li class="list-group-item">Model: 20000mAh (ACE ELEC)</li>
+  <li class="list-group-item">Weight (kg): 0.2</li>
+  <li class="list-group-item">Color: Black</li>
+  <li>Shop Type: Imbibe Mall</li>
+</ul>      
         </ul>`,
-      specification: `<p class="fw-semibold">WEYON 19 inches LED TV  +1 Year Warranty - Black 19TV</p>
-        <p>Clear, detailed picture:
-          
-          See every image as the director intended with enriched colors.
-          
-          Ultra clean view:
-          
-          Analyzing original content with an advanced algorithm, Ultra Clean View gives you higher-quality images with less distortion. Enjoy the clear picture.
-
-          
-          HD picture quality:
-          LED distributes the LED lights on the back of the panel so that the backlight can be evenly transmitted to the entire screen, the brightness and color gamut are guaranteed, the backlight rendering image is more accurate, and the picture details are more delicate and realistic. LED technology allows you to go beyond the screen into a fully immersive world. </p>`,
         },
-    {
-      name: "Oraimo 20000mAh Power-Bank OPB-P208DN",
-      imageSrc: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/29/3531721/3.jpg?8401",
-      price: 12000,
-      description1: `<div>Key Feautures </div>
-      <ul>
-        <li>Large LED Display -Battery at a Glance2.</li>
-        <li>4A Dual Output & Input-Efficient Charging</li>
-        <li> Widely Compatible -Support Multiple Ports </li>
-        <li> Multi-protection System-Safe and Reliable</li>
-        <li>Anti-scratch Texture-Durable and Comfortable</li>
-        </ul>`,
-      specification: `<p class="fw-semibold">Large LED Display Battery at a Glance</p>
-        <p>The data is accurate to 1% which can be seen at any time clearly. Say goodbye to the no electricity dilemma, let's keep everything under control.</p>
- 
-        <p>2.4A Dual Output & Input-Efficient Charging It contains two AniFast fast charging ports and supports dual input and output, which can charge multiple devices at the same time- without sacrificing charging speed.</p>
-
-        <p>Widely Compatible -Support Multiple Ports AniFast charging technology supports compatible ports of multiple brands and devices. Mobile phones, tablets, and computers can be charged at the same time extremely fast.</p>
-
- 
-        <p>Multi-protection System-Safe and Reliable It adopts high-quality batteries and has a complete after-sales system. 365-day warranty provides you with a reliable  shopping experience.</p>
-
-        <p>Anti-scratch Texture-Durable and ComfortableThe unique anti scratch design can effectively prevent stains and scratches, which better protects the appearance and provides a comfortable grip.</p>`,
-    },
 
 
   ]
   const me = () => {
-    allProduct.map((wholecard, index) => {
+    allProduct.map((wholeCard, index) => {
       allcards.innerHTML += `
     <div class="shadow-sm mb-2 mx-auto card border-0" style="width: 18rem;">
-  <img src="${wholecard.imageSrc}" class="card-img-top mx-auto" alt="...">
+  <img src="${wholeCard.firstImage}" class="card-img-top mx-auto" alt="...">
   <div class="card-body">
-    <p class="card-title"><small class="fw-semibold">${wholecard.name}</small></p>
-    <h6 class="card-title">₦${wholecard.price}</h6>
+    <p class="card-title"><small class="fw-semibold">${wholeCard.name}</small></p>
+    <h6 class="card-title">₦${wholeCard.price}</h6>
     <p class="fw-semibold">
       <small>Imbibe</small>
       </p>

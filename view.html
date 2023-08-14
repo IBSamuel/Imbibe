@@ -60,49 +60,48 @@
         <small class="me-3 ms-3">/</small>
     </span>
     <span class="fw-semibold">
-        <small class="text-secondary">Gaming</small>
+        <small class="text-secondary" id="mainCategory">Gaming</small>
         <small class="me-3 ms-3">/</small>
     </span>
     <span class="fw-semibold">
-        <small>Havic HV G-92 Gamepad</small>
+        <small id="shortName">Havic HV G-92 Gamepad</small>
     </span>
 </div>
 <!-- row -->
 <div class="m-1 row">
     <div class="col-lg-5 col-sm-12">
-        <img class="w-100 rounded" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/39/4447531/5.jpg?8888" alt="">
+        <img class="w-100 rounded" id="mainImage" src="" alt="">
     </div>
     <div class="col-lg-2 col-sm-12">
         <div class="text-center">
             <div class="mb-2 mt-3">
-                <img class="w-75 rounded" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/39/4447531/5.jpg?8888" alt="">
+                <img class="w-75 rounded" id="subImageOne" src="" alt="">
             </div>
             <div class="">
-                <img class="w-75 rounded" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/39/4447531/5.jpg?8888" alt="">
+                <img class="w-75 rounded" id="subImageTwo" src="" alt="">
             </div>
             <div class="">
-                <img class="w-75 mt-2 rounded" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/39/4447531/5.jpg?8888" alt="">
+                <img class="w-75 mt-2 rounded" id="subImageThree" src="" alt="">
             </div>
         </div>
     </div>
     <div class="col-lg-4">
-        <p class="h4">Havic HV G-92 Gamepad</p>
-        <span>⭐⭐⭐⭐</span>
-        <span>
-            <small>150 reviews</small>
-        </span>
+        <p class="h4" id="realName"></p>
+        <span id="review"></span>
+        
         <p class="fw-semibold fs-5 ms-1 border-bottom border-secondary w-75">
-            <span>₦</span><span>37732</span>
+            <span>₦</span><span id="amount">37732</span>
         </p>
-    <small>Vendors are using Flash memory decimal arithmetic: 1 MB = 1000KB, 1G = 1000 MB
+    <small id="shortInfo">Vendors are using Flash memory decimal arithmetic: 1 MB = 1000KB, 1G = 1000 MB
         Calculated, operating system with binary arithmetic: 1 MB = 1024KB, 1 GB = 1024 MB;</small>
         <div>
+          <br>
             <div>
                 <button class="h4 w-25 oranged border-0 text-light">-</button>
                 <span class="text-center d-inline-block"><small class="fw-semibold h4">1</small></span>
                 <button class="h4 oranged border-0 w-25 oranged text-light">+</button>
             </div>
-            <button class="oranged text-white border-0 p-1 rounded "><i class="bi bi-plus-square"></i> Add to cart</button>
+            <button class="oranged text-white border-0 p-1 rounded w-50 "> Add to cart</button>
         </div>
         <div class="bordertext-center rounded ">
           <button class="btn border row">
@@ -115,5 +114,26 @@
         </div>
     </div>
 </div>
+<!-- Specification -->
+<div class="m-3">
+  <p class="fw-semibold">Specification</p>
+<div id="specifications"></div>
+</div>
   </body>
+  <script>
+    let newItems = JSON.parse(localStorage.getItem("productData"))
+    console.log(newItems)
+    mainCategory.innerText=newItems.category
+    shortName.innerText=newItems.shortname
+    realName.innerText=newItems.name
+    amount.innerText=newItems.price
+    review.innerText=newItems.reviews
+    shortInfo.innerText=newItems.shortDetails
+    mainImage.src=newItems.firstImage
+    subImageOne.src=newItems.secondImage
+    subImageTwo.src=newItems.thirdImage
+    subImageThree.src=newItems.fourthImage
+    specifications.innerHTML=newItems.specifications
+
+  </script>
 </html>
