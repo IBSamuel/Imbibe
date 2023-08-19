@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home</title>
+  <link rel="shortcut icon" href="https://s3.us-east-1.amazonaws.com/cdn.designcrowd.com/blog/120-cool-logos-for-a-fresh-new-look/FAMOUS/Apple.png" type="image/x-icon">
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="index.css">
@@ -20,7 +21,7 @@
   <nav class="navbar navbar-expand-lg bg-white shadow-sm">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Imbibe</a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+      <span class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
         aria-controls="navbarScroll border-white " aria-expanded="false" aria-label="Toggle navigation">
         <div id="menuToggle">
           <input id="checkbox" type="checkbox">
@@ -30,7 +31,7 @@
             <div class="bar bar--bottom"></div>
           </label>
         </div>
-      </button>
+      </span>
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav fw-semibold mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item me-5">
@@ -107,7 +108,7 @@
     </div>
     <div>
       <!-- Carousel -->
-      <div id="carouselExample" class=" shadow carousel slide">
+      <div id="carouselExample" class=" carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
@@ -211,8 +212,55 @@
         <div class="col-lg-"></div>
       </div>
       <!-- Card Section -->
-      <div class="p-3 row shadow gap-1 m-2" id="allcards">
+      <div class="p-3 row shadow-sm gap-1 m-2" id="allcards">
       </div>
+      <!-- Categories -->
+      <div class="m-3">
+        <span class="oranged rounded orangedText p-1"><small>sj</small></span>
+        <span class="orangedText fw-semibold">Categories</span><br>
+        <span class="h4">Browse By Category</span>
+      </div>
+      <!-- List -->
+      <div class="container col-12 mx-auto overflow-y-auto gap-2 d-flex" style="height: 9em;">
+        <div class="rounded col-lg-2 text-center border border-2 p-3">
+          <i class="bi bi-phone h1"></i>
+         <br>
+          <span class=" fw-semibold">Phone</span>
+        </div>
+        <div class="rounded col-lg-2 text-center border border-2 p-3">
+          <i class="bi bi-laptop h1"></i>
+          <br>
+           <span class=" fw-semibold">Computer</span>
+         </div>
+         <div class="rounded col-lg-2 text-center border border-2 p-3">
+           <i class="bi bi-smartwatch h1"></i>
+           <br>
+           <span class=" fw-semibold">Computer</span>
+          </div>
+          <div class="rounded col-lg-2 text-center border border-2 p-3">
+            <i class="bi bi-camera h1"></i>
+            <br>
+            <span class=" fw-semibold">Computer</span>
+           </div>
+           <div class="rounded col-lg-2 text-center border border-2 p-3">
+            <i class="bi bi-headphones h1"></i>
+            <br>
+            <span class=" fw-semibold">Computer</span>
+           </div>
+           <div class="rounded col-lg-2 text-center border border-2 p-3">
+            <i class="bi bi-controller h1"></i>
+            <br>
+            <span class=" fw-semibold">Computer</span>
+           </div>
+       </div>
+    </div>
+      <!-- This month -->
+      <div class="m-3">
+        <span class="oranged rounded orangedText p-1"><small>sj</small></span>
+        <span class="orangedText fw-semibold">This Month</span><br>
+        <span class="h1">Best Selling Product</span>
+      </div>
+      <div id="cateGoRy" class="row"></div>
 
 </body>
 <script>
@@ -250,10 +298,138 @@
 </ul>      
         </ul>`,
         },
+        {
+      name: `Samsung Galaxy A14 6.6" 4GB RAM/64GB ROM Android 13 - Black`,
+      shortname:"Samsung Galaxy A14 6.6...",
+      price: 121750,
+      category:"Mobile phone",
+      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/6.jpg?2300",
+      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/5.jpg?2300",
+      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/8.jpg?2300",
+      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/1.jpg?2300",
+      reviews:"⭐⭐⭐ 110 reviews",
+      shortDetails:`PUnleash the Galaxy A14 4G's enduring battery for work and play. Enjoy lag-free 4G gaming on a sleek device with expandable storage. Capture stunning moments with a versatile camera and immerse yourself in a 6.6" Infinity-V FHD+ display. Seamlessly connect with Google Meet and transfer files swiftly with Quick Share between Galaxy devices.`,
+      specifications: `<div>Key Specifications </div>
+      <ul>
+        <ul class="list-group">
+    <li class="list-group-item">Brand - Samsung</li>
+    <li class="list-group-item">Model Name - A14 4G</li>
+    <li class="list-group-item">Operating System - Android 13.0</li>
+    <li class="list-group-item">Cellular Technology - 4G</li>
+    <li class="list-group-item">Memory Storage Capacity - 64 GB</li>
+    <li class="list-group-item">Connectivity Technology - Bluetooth, Wi-Fi, USB</li>
+    <li class="list-group-item">Color - Black</li>
+    <li class="list-group-item">Screen Size - 6.6 Inches</li>
+    <li class="list-group-item">RAM Memory Installed Size - 4 GB</li>
 
 
-  ]
-  const me = () => {
+    <ul class="list-group mt-5">
+    <li class="list-group-item">Operating System - Android 13.0</li>
+    <li class="list-group-item">Cellular Technology - 4G</li>
+    <li class="list-group-item">Memory Storage Capacity - 64 GB</li>
+    <li class="list-group-item">Connectivity Technology - Bluetooth, Wi-Fi, USB</li>
+    <li class="list-group-item">Color - Black</li>
+    <li class="list-group-item">Screen Size - 6.6 Inches</li>
+    <li class="list-group-item">RAM Memory Installed Size - 4 GB</li>
+    <li class="list-group-item">SKU - SA948MP4OEBVINAFAMZ</li>
+    <li class="list-group-item">Product Line - Sun World Distributions Limited - AC</li>
+    <li class="list-group-item">Model - A14</li>
+    <li class="list-group-item">Weight (kg) - 0.5</li>
+    <li class="list-group-item">Color - Black</li>
+    <li class="list-group-item">Shop Type - Imbibe Mall</li>
+</ul>
+      
+        </ul>`
+        },
+        {
+      name: `Edifier G2000 32W Bluetooth USB Computer Speakers`,
+      shortname:"Edifier G2000 32W",
+      price: 18021,
+      category:"Computer Speakers",
+      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/5.jpg?9636",
+      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/6.jpg?9636",
+      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/4.jpg?9636",
+      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/3.jpg?9636",
+      reviews:"⭐⭐⭐⭐ 69 reviews",
+      shortDetails:`Established in 1996, Edifier specializes in premium audio solutions that showcase technological innovation and design elegance.
+      We deliver outstanding sound experiences through a wide range of sound systems for personal entertainment and professional excellence. `,
+      specifications: `<h4>Specifications</h4>
+<ul class="list-group">
+    <li class="list-group-item">SKU: ED473EA1HAX6QNAFAMZ</li>
+    <li class="list-group-item">Product Line: Edifier Official Store-COD</li>
+    <li class="list-group-item">Model: G2000</li>
+    <li class="list-group-item">Size (L x W x H cm): 9.25*8.5*5.6</li>
+    <li class="list-group-item">Weight (kg): 1.4</li>
+    <li class="list-group-item">Color: BLACK</li>
+    <li class="list-group-item">Main Material: N/A</li>
+</ul>
+
+<h4>Key Features</h4>
+<ul class="list-group">
+    <li class="list-group-item">Superior Sound: HIFI 2.75 inches full range speakers unit with backward mega bass port 16W RMS power, 32W total peak power to deliver unexceptionable sound quality and strong bass, and a subwoofer output interface included.</li>
+    <li class="list-group-item">Multiple Sound Mode: Professional acoustic-team tuning, EQ adjustment with Game, Music, and Movie three modes for multiple usages and outstanding sound effects.</li>
+    <li class="list-group-item">Broad Compatibility: Versatile compatibility with 3.5mm AUX, Bluetooth, and USB sound card inputs, for all your devices like PC Mac/ PS4/ Xbox/ Laptop/ TV/ CD Player/ Mobile Phones, etc.</li>
+    <li class="list-group-item">RGB Illumination: 12 RGB lighting effects aim to elevate your gaming experience by dressing your desktop and room into a spectrum style.</li>
+    <li class="list-group-item">Delicate Design: Unique column-shaped cabinet with 10-degree elevation and 0.65L isometric cavity, matte panel and metal laser engraving, screen printing logo, and anti-slip foot pads.</li>
+</ul>
+
+<h4>What's in the Box</h4>
+<ul class="list-group">
+    <li class="list-group-item">Active Speaker*1</li>
+    <li class="list-group-item">Passive Speaker*2</li>
+    <li class="list-group-item">3.5mm Audio Cable*1</li>
+    <li class="list-group-item">User Manual*1</li>
+</ul>
+
+      
+        </ul>`
+        },
+        {
+      name: `Temperature Display Water Bottle 500ml - BLACK`,
+      shortname:"Temperature Display Water Bottle",
+      price: 5100,
+      category:"Water Bottles",
+      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/8676432/4.jpg?9435",
+      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/8676432/1.jpg?9435",
+      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/8676432/2.jpg?0294",
+      fourthImage:"https://ng.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/97/8676432/3.jpg?0294",
+      reviews:"⭐ 1 reviews",
+      shortDetails:`The smart water bottle has a LED display,water leak proof,it's low energy consumption and without a battery change,That can use several years! Press the top of the thermos softly,Sensitive capacity touch-cover can show the temperature of water inside the thermos immediately that can avoid the embarrassment of burning your.PREMIUM Material `,
+      specifications: `<div>Key Specifications </div>
+      <ul>
+        <ul class="list-group">
+    <li class="list-group-item">304 Material</li>
+    <li class="list-group-item">Temperature display</li>
+    <li class="list-group-item">Premium material</li>
+    <li class="list-group-item">Easy to clean</li>
+    <li class="list-group-item">Perfect design</li>
+    <li class="list-group-item">Multi-use</li>
+    <li class="list-group-item">Portable</li>
+</ul>
+
+<h4>What's in the Box</h4>
+<ul class="list-group">
+    <li class="list-group-item">Temperature Water Bottle 500ml x 1</li>
+</ul>
+
+<h4>Specifications</h4>
+<ul class="list-group">
+    <li class="list-group-item">SKU: GE779HA4XCC57NAFAMZ</li>
+    <li class="list-group-item">Product Line: Oja7tinhundred Store</li>
+    <li class="list-group-item">Production Country: China</li>
+    <li class="list-group-item">Weight (kg): 0.55</li>
+    <li class="list-group-item">Color: N/A</li>
+    <li class="list-group-item">Main Material: Stainless Steel</li>
+    <li class="list-group-item">Care Label: Keep Clean and dry after every use.</li>
+    <li class="list-group-item">Shop Type: Jumia Mall/Food</li>
+</ul>
+
+      
+        </ul>`
+        }, 
+ 
+      ]
+  const flash = () => {
     allProduct.map((wholeCard, index) => {
       allcards.innerHTML += `
     <div class="shadow-sm mb-2 mx-auto card border-0" style="width: 18rem;">
@@ -271,9 +447,261 @@
 
     })
   }
-  me()
+  flash()
+
+  
+    cateGory = [
+      {name: `GAOMON M10K PRO Graphics DrawingTablet With Battery-Free Pen`,
+      shortname:"GAOMON M10K PRO Graphics",
+      price: 585500,
+      category:"Graphics Tablets",
+      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/1.jpg?7060",
+      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/6.jpg?7060",
+      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/5.jpg?7060",
+      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/3.jpg?7060",
+      reviews:"⭐ 1 reviews",
+      shortDetails:`[Support for Android OS]--M10K PRO can support Android OS 6.0 or later. Connect the tablet to your Android mobile phone/tablet with OTG adapter, then we can start the art creation freely. `,
+      specifications:`<h4>Key Features</h4>
+<ul class="list-group">
+    <li class="list-group-item">Support for Android OS.</li>
+    <li class="list-group-item">AP32 battery-free stylus Pen.</li>
+    <li class="list-group-item">Radial controller and 10 shortcut keys.</li>
+    <li class="list-group-item">Compatibility with operating systems.</li>
+</ul>
+
+<h4>What's in the Box</h4>
+<ul class="list-group">
+    <li class="list-group-item">M10K PRO X 1</li>
+    <li class="list-group-item">AP32 Battery-Free Pen x1</li>
+    <li class="list-group-item">Micro USB Cable x1</li>
+    <li class="list-group-item">Pen Nibs x 8</li>
+    <li class="list-group-item">Pen Clip x1</li>
+    <li class="list-group-item">Pen Case x1</li>
+    <li class="list-group-item">Felt Nib Bag x1</li>
+    <li class="list-group-item">Quick Start Guide x1</li>
+    <li class="list-group-item">Driver Download Card x1</li>
+</ul>
+
+<h4>Specifications</h4>
+<ul class="list-group">
+    <li class="list-group-item">SKU: GA455EA33PBG4NAFAMZ</li>
+    <li class="list-group-item">Product Line: GAOMON Official Store -COD</li>
+    <li class="list-group-item">Model: M10K PRO</li>
+    <li class="list-group-item">Production Country: China</li>
+    <li class="list-group-item">Size (L x W x H cm): 360*240*10.5 mm</li>
+    <li class="list-group-item">Weight (kg): 1.4</li>
+    <li class="list-group-item">Color: Black</li>
+    <li class="list-group-item">Main Material: IPS</li>
+    <li class="list-group-item">From the Manufacturer: CHINA</li>
+    <li class="list-group-item">Care Label: NO</li>
+    <li class="list-group-item">Shop Type: Jumia Mall</li>
+</ul>
+`
+        },
+        {name: `GAOMON M10K PRO Graphics DrawingTablet With Battery-Free Pen`,
+      shortname:"GAOMON M10K PRO Graphics",
+      price: 393700,
+      category:"Graphics Tablets",
+      firstImage:"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/5.jpg?6464",
+      secondImage:"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/2.jpg?6464",
+      thirdImage:"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/1.jpg?6464",
+      fourthImage:"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/6.jpg?6464",
+      reviews:`<span class="bg-secondary">⭐</span> 0 reviews`,
+      shortDetails:`<h4>Product Details</h4>`,
+      specifications:`
+<ul class="list-group">
+    <li class="list-group-item">Product number: 2N9A4UA</li>
+    <li class="list-group-item">Product name: HP Laptop 15-dy2074nr</li>
+    <li class="list-group-item">Microprocessor: Intel® Core™ i3-1115G4 (up to 4.1 GHz with Intel® Turbo Boost Technology, 6 MB L3 cache, 2 cores)</li>
+    <li class="list-group-item">Chipset: Intel® Integrated SoC</li>
+    <li class="list-group-item">Memory, standard: 8 GB DDR4-2666 SDRAM (2 x 4 GB)</li>
+    <li class="list-group-item">Video graphics: Intel® UHD Graphics (Integrated)</li>
+    <li class="list-group-item">Hard drive: 256 GB PCIe® NVMe™ M.2 SSD</li>
+    <li class="list-group-item">Optical drive: Optical drive not included</li>
+    <li class="list-group-item">Display: 15.6" diagonal, HD (1366 x 768), touch, micro-edge, BrightView, 220 nits, 45% NTSC</li>
+    <li class="list-group-item">Keyboard: Full-size, natural silver keyboard with numeric keypad</li>
+    <li class="list-group-item">Wireless connectivity: Realtek RTL8821CE-M 802.11a/b/g/n/ac (1x1) Wi-Fi® and Bluetooth® 4.2 combo</li>
+    <li class="list-group-item">Expansion slots: 1 multi-format SD media card reader</li>
+    <li class="list-group-item">External ports: 1 SuperSpeed USB Type-C® 5Gbps, 2 SuperSpeed USB Type-A 5Gbps, 1 HDMI 1.4b, 1 AC smart pin, 1 headphone/microphone combo</li>
+    <li class="list-group-item">Minimum dimensions (W x D x H): 35.85 x 24.2 x 1.79 cm</li>
+    <li class="list-group-item">Weight: 1.69 kg</li>
+    <li class="list-group-item">Power supply type: 45 W Smart AC power adapter</li>
+    <li class="list-group-item">Battery type: 3-cell, 41 Wh Li-ion</li>
+    <li class="list-group-item">Battery life mixed usage: Up to 8 hours and 30 minutes</li>
+    <li class="list-group-item">Video Playback Battery life: Up to 11 hours</li>
+    <li class="list-group-item">Webcam: HP True Vision 720p HD camera with integrated dual array digital microphones</li>
+    <li class="list-group-item">Audio features: Dual speakers</li>
+</ul>
+
+<h4>Key Features</h4>
+<ul class="list-group">
+    <li class="list-group-item">11th Generation, Intel Core i3, up to 4.1 GHz</li>
+    <li class="list-group-item">Memory: 8GB DDR4 RAM</li>
+    <li class="list-group-item">Storage: 256 GB PCIe® NVMe™ M.2 SSD</li>
+    <li class="list-group-item">Screen: 15.6" diagonal, HD Touchscreen</li>
+    <li class="list-group-item">Graphics: Intel® UHD Graphics</li>
+    <li class="list-group-item">No Optical Drive included</li>
+    <li class="list-group-item">Operating System: Windows 11</li>
+</ul>
+
+<h4>Specifications</h4>
+<ul class="list-group">
+    <li class="list-group-item">SKU: HP246CL3P2AVYNAFAMZ</li>
+    <li class="list-group-item">Product Line: Mercy and Mercy Stores</li>
+    <li class="list-group-item">Model: 15 Notebook</li>
+    <li class="list-group-item">Weight (kg): 2.04</li>
+    <li class="list-group-item">Color: Silver</li>
+</ul>
+
+`
+        },
+        {name: `Hp Pavilion 15 X360 11th Gen Intel Core™ I5,16GB RAM 1TB SSD, Backlit Keyboard, Wins 10`,
+      shortname:"Hp Pavilion 15 X360 11ths",
+      price: 660000,
+      category:"Laptops",
+      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/2.jpg?8423",
+      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/5.jpg?8423",
+      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/1.jpg?8423",
+      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/4.jpg?8423",
+      reviews:`⭐ 1 reviews`,
+      shortDetails:``,
+      specifications:`
+      <h4>Product Details</h4>
+<ul class="list-group">
+    <li class="list-group-item">Product number: </li>
+    <li class="list-group-item">Product name: HP Pavilion 15 X360</li>
+    <li class="list-group-item">Microprocessor: Intel® Core™ i5- up to 4.2GHz with Intel® Turbo Boost Technology, 4 MB cache, 4 cores)</li>
+    <li class="list-group-item">Chipset: Intel® Integrated SoC</li>
+    <li class="list-group-item">Memory, standard: 16 GB DDR4-2666 SDRAM (2 x 8 GB)</li>
+    <li class="list-group-item">Video graphics: Intel® UHD Graphics (Integrated)</li>
+    <li class="list-group-item">Hard drive: 1 TB SSD PCIe® Nvme m.2 SSD</li>
+    <li class="list-group-item">Optical drive: Optical drive not included</li>
+    <li class="list-group-item">Display: 15.6" diagonal HD SVA BrightView micro-edge WLED-backlit touch screen, 220 nits, 45% NTSC (1366 x 768)</li>
+    <li class="list-group-item">Wireless connectivity: Realtek RTL8821CE 802.11b/g/n/ac (1x1) Wi-Fi® and Bluetooth® 4.2 Combo</li>
+    <li class="list-group-item">Expansion slots: 1 multi-format SD media card reader</li>
+    <li class="list-group-item">External ports: 1 USB 3.1 Gen 1 Type-C™, 2 USB 3.1 Gen 1 Type-A, 1 AC smart pin, 1 HDMI 1.4b, 1 headphone/microphone combo</li>
+    <li class="list-group-item">Minimum dimensions (W x D x H): 35.85 x 24.2 x 1.79 cm</li>
+    <li class="list-group-item">Weight: 1.69 kg</li>
+    <li class="list-group-item">Power supply type: 45 W Smart AC power adapter</li>
+    <li class="list-group-item">Battery type: 3-cell, 41 Wh Li-ion</li>
+    <li class="list-group-item">Battery life mixed usage: Up to 9 hours and 30 minutes</li>
+    <li class="list-group-item">Video Playback Battery life: Up to 8 hours</li>
+    <li class="list-group-item">Webcam: HP TrueVision HD Camera with integrated dual array digital microphone</li>
+    <li class="list-group-item">Audio features: Dual speakers</li>
+</ul>
+
+<h4>Specifications</h4>
+<ul class="list-group">
+    <li class="list-group-item">SKU: HP246CL0URXD1NAFAMZ</li>
+    <li class="list-group-item">Product Line: Mercy and Mercy Stores</li>
+    <li class="list-group-item">Model: Pavilion 15</li>
+    <li class="list-group-item">Weight (kg): 1</li>
+</ul>
+
+<h4>Key Features</h4>
+<ul class="list-group">
+    <li class="list-group-item">Microprocessor: 11th Generation Intel® Core™ i5-1135G7 (up to 4.2 GHz with Intel® Turbo Boost Technology, 4 MB cache, 4 cores)</li>
+    <li class="list-group-item">Storage: 1 TB SSD</li>
+    <li class="list-group-item">Memory: 16GB RAM</li>
+    <li class="list-group-item">Screen: 15.6 Inch touch screen</li>
+    <li class="list-group-item">Backlit Keyboard</li>
+    <li class="list-group-item">Operating System: Windows 10</li>
+    <li class="list-group-item">Intel Iris Xe</li>
+    <li class="list-group-item">Memory, standard: 16GB DDR4-2666 SDRAM (2 x 8 GB)</li>
+    <li class="list-group-item">Video graphics: Intel Iris Xe (Integrated)</li>
+    <li class="list-group-item">Hard drive: 1TB SSD PCIe®</li>
+</ul>
+
+
+
+`
+        },
+        {name: `Hp Envy 13 X360 Intel Core I7 11th Gen 8GB RAM/512GB SSD Win 10 + Headset`,
+      shortname:"Hp Envy 13 X360 Intel",
+      price: 843500,
+      category:"Laptops",
+      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/231618/4.jpg?8315",
+      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/231618/3.jpg?8315",
+      thirdImage:"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/1.jpg?6464",
+      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/231618/1.jpg?8315",
+      reviews:`<span class="bg-secondary">⭐</span> No reviews`,
+      shortDetails:`HP ENVY x360 Convert 13X360MicroprocessorIntel Core i7-1165G7 (up to 4.7 GHz with Intel Turbo Boost Technology Intel Integrated SoCMemory, standard8 GB DDR4-3200 SDRAM Video graphicsIntel® Iris® Xᵉ GraphicsIntegratedHard drive512 GB M.2 SSDOptical driveOptical drive not includedDisplay13.3"`,
+      specifications:`
+      <h4>Product Details</h4>
+<ul class="list-group">
+    <li class="list-group-item">Product number: 3A7Y1UA</li>
+    <li class="list-group-item">Product name: HP ENVY x360 Convert 13m-bd0033dx</li>
+    <li class="list-group-item">Microprocessor: Intel® Core™ i7-1165G7 (up to 4.7 GHz with Intel® Turbo Boost Technology, 12 MB L3 cache, 4 cores)</li>
+    <li class="list-group-item">Chipset: Intel® Integrated SoC</li>
+    <li class="list-group-item">Memory, standard: 8 GB DDR4-3200 MHz RAM (onboard)</li>
+    <li class="list-group-item">Video graphics: Intel® Iris® Xᵉ Graphics (Integrated)</li>
+    <li class="list-group-item">Hard drive: 512 GB PCIe® NVMe™ M.2 SSD</li>
+    <li class="list-group-item">Optical drive: Optical drive not included</li>
+    <li class="list-group-item">Display: 13.3" diagonal, FHD (1920 x 1080), OLED, multitouch-enabled, UWVA, edge-to-edge glass, micro-edge, Corning® Gorilla® Glass NBT™, 400 nits, 100% DCI-P3</li>
+    <li class="list-group-item">Wireless connectivity: Intel® Wi-Fi 6 AX201 (2x2) and Bluetooth® 5 combo (Supporting Gigabit data rate)</li>
+    <li class="list-group-item">Expansion slots: 1 microSD media card reader</li>
+    <li class="list-group-item">External ports: 1 Thunderbolt™ 4 with USB4™ Type-C® 40Gbps, 1 SuperSpeed USB Type-A 5Gbps (HP Sleep and Charge), 1 SuperSpeed USB Type-A 5Gbps, 1 AC smart pin, 1 headphone/microphone combo</li>
+    <li class="list-group-item">Minimum dimensions (W x D x H): 30.65 x 19.46 x 1.64 cm</li>
+    <li class="list-group-item">Weight: 1.32 kg</li>
+    <li class="list-group-item">Power supply type: 65 W AC power adapter</li>
+    <li class="list-group-item">Battery type: 3-cell, 51 Wh Li-ion polymer</li>
+    <li class="list-group-item">Webcam: HP Wide Vision 720p HD camera with camera shutter and integrated dual array digital microphones</li>
+    <li class="list-group-item">Audio features: Audio by Bang & Olufsen; Dual speakers; HP Audio Boost</li>
+</ul>
+
+<h4>Specifications</h4>
+<ul class="list-group">
+    <li class="list-group-item">SKU: HP246CL0RIWJMNAFAMZ</li>
+    <li class="list-group-item">Product Line: Mercy and Mercy Stores</li>
+    <li class="list-group-item">Model: HP ENVY</li>
+    <li class="list-group-item">Production Country: China</li>
+    <li class="list-group-item">Weight (kg): 1.8</li>
+    <li class="list-group-item">Color: GOLD</li>
+    <li class="list-group-item">Main Material: CARBON FIBRE</li>
+    <li class="list-group-item">Shop Type: Jumia Mall</li>
+</ul>
+
+<h4>Key Features</h4>
+<ul class="list-group">
+    <li class="list-group-item">Processor type: Intel Core i7-1165G7</li>
+    <li class="list-group-item">Processor generation: 11th generation</li>
+    <li class="list-group-item">Memory: 8GB</li>
+    <li class="list-group-item">Storage: 512SSD</li>
+    <li class="list-group-item">Touchscreen, backlit keyboard</li>
+</ul>
+
+
+
+`
+        },
+      ]
+  const secondCard = () => {
+    cateGory.map((wholeCar, index) => {
+      cateGoRy.innerHTML += `
+    <div class="shadow-sm mb-2 mx-auto card border-0" style="width: 18rem;">
+  <img src="${wholeCar.firstImage}" class="card-img-top mx-auto" alt="...">
+  <div class="card-body">
+    <p class="card-title"><small class="fw-semibold">${wholeCar.name}</small></p>
+    <h6 class="card-title">₦${wholeCar.price}</h6>
+    <p class="fw-semibold">
+      <small>Imbibe</small>
+      </p>
+    
+    <a href="#" class=" orangedTextNew" onclick="addCategory(${index})"><i class="bi bi-view-list"></i></a>
+  </div>
+</div>`
+
+    })
+  }
+  secondCard()
   const add=(x)=>{
     let cardData = allProduct[x] 
+    console.log(cardData)
+    JSON.stringify(cardData)
+    localStorage.setItem("productData",JSON.stringify(cardData))
+  }
+  const addCategory=(x)=>{
+    let cardData = cateGory[x] 
     console.log(cardData)
     JSON.stringify(cardData)
     localStorage.setItem("productData",JSON.stringify(cardData))
