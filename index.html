@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="shortcut icon" href="https://s3.us-east-1.amazonaws.com/cdn.designcrowd.com/blog/120-cool-logos-for-a-fresh-new-look/FAMOUS/Apple.png" type="image/x-icon">
-  <link rel="stylesheet" href="general.css">
+  <link rel="shortcut icon" href="./Images/Imbibe Logo.webp" type="image/x-icon">
+  <link rel="stylesheet" href="../Main css/general.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,7 +20,7 @@
   <!-- Navbar  -->
   <nav class="navbar navbar-expand-lg bg-white shadow-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Imbibe</a>
+      <a class="navbar-brand" href="#"><img style="width: 60px;" src="./Images/Get your package copy.webp" alt=""></a>
       <span class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
         aria-controls="navbarScroll border-white " aria-expanded="false" aria-label="Toggle navigation">
         <div id="menuToggle">
@@ -212,71 +212,45 @@
         <div class="col-lg-"></div>
       </div>
       <!-- Card Section -->
-      <div class="p-3 row shadow-sm gap-1 m-2" id="allcards">
+      <div class="p-3 row gap-1 m-4" id="allcards">
       </div>
       <!-- Categories -->
-      <div class="m-3">
-        <span class="oranged rounded orangedText p-1"><small>sj</small></span>
-        <span class="orangedText fw-semibold">Categories</span><br>
-        <span class="h4">Browse By Category</span>
-      </div>
-      <!-- List -->
-      <div class="container col-12 mx-auto overflow-y-auto gap-2 d-flex" style="height: 9em;">
-        <div class="rounded col-lg-2 text-center border border-2 p-3">
-          <i class="bi bi-phone h1"></i>
-         <br>
-          <span class=" fw-semibold">Phone</span>
-        </div>
-        <div class="rounded col-lg-2 text-center border border-2 p-3">
-          <i class="bi bi-laptop h1"></i>
-          <br>
-           <span class=" fw-semibold">Computer</span>
-         </div>
-         <div class="rounded col-lg-2 text-center border border-2 p-3">
-           <i class="bi bi-smartwatch h1"></i>
-           <br>
-           <span class=" fw-semibold">Computer</span>
-          </div>
-          <div class="rounded col-lg-2 text-center border border-2 p-3">
-            <i class="bi bi-camera h1"></i>
-            <br>
-            <span class=" fw-semibold">Computer</span>
-           </div>
-           <div class="rounded col-lg-2 text-center border border-2 p-3">
-            <i class="bi bi-headphones h1"></i>
-            <br>
-            <span class=" fw-semibold">Computer</span>
-           </div>
-           <div class="rounded col-lg-2 text-center border border-2 p-3">
-            <i class="bi bi-controller h1"></i>
-            <br>
-            <span class=" fw-semibold">Computer</span>
-           </div>
-       </div>
-    </div>
-      <!-- This month -->
-      <div class="m-3">
-        <span class="oranged rounded orangedText p-1"><small>sj</small></span>
-        <span class="orangedText fw-semibold">This Month</span><br>
-        <span class="h1">Best Selling Product</span>
-      </div>
-      <div id="cateGoRy" class="row"></div>
 
+    </div>
+    <!-- This month -->
+    <div class="m-3">
+      <span class="oranged rounded orangedText p-1"><small>sj</small></span>
+      <span class="orangedText fw-semibold">This Month</span><br>
+      <span class="h1">Best Selling Product</span>
+    </div>
+    <!-- This month Div -->
+    <div id="cateGoRy" class="row m-4"></div>
+    <br>
+    <div id="adds"></div>
+        
+  </div>
+  <div class="m-3">
+    <span class="oranged rounded orangedText p-1"><small>sj</small></span>
+    <span class="orangedText fw-semibold">Our Product</span><br>
+    <span class="h5">Explore Our Product</span>
+  </div>
+  <div id="ourProduct">   
+  </div>
 </body>
 <script>
   allProduct = [
     {
       name: "Power Banks 20000 MAh Utra Slim Portable Fast Charger (ACE ELEC)",
-      shortname:"Power Banks 20000 MAh Utra...",
+      shortname: "Power Banks 20000 MAh Utra...",
       imageSrc: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/39/4447531/5.jpg?8888",
       price: 6500,
-      category:"Mobile phone Accessories",
-      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/4.jpg?3620",
-      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/1.jpg?3620",
-      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/6.jpg?3620",
-      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/7.jpg?3620",
-      reviews:"⭐⭐⭐⭐ 1226 reviews",
-      shortDetails:"PowerCore Slim 20000, Ultra Slim Portable Charger, Compact 20000mAh External Battery, High-Speed PowerIQ Charging Technology for Mobile phones, ipad, and more The New Generation Power-Bank P2W (20000mAh) is light, convenient and portable.",
+      category: "Mobile phone Accessories",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/4.jpg?3620",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/1.jpg?3620",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/6.jpg?3620",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/02/3088932/7.jpg?3620",
+      reviews: "⭐⭐⭐⭐ 1226 reviews",
+      shortDetails: "PowerCore Slim 20000, Ultra Slim Portable Charger, Compact 20000mAh External Battery, High-Speed PowerIQ Charging Technology for Mobile phones, ipad, and more The New Generation Power-Bank P2W (20000mAh) is light, convenient and portable.",
       specifications: `<div>Key Specifications </div>
       <ul>
         <ul class="list-group">
@@ -297,18 +271,18 @@
   <li>Shop Type: Imbibe Mall</li>
 </ul>      
         </ul>`,
-        },
-        {
+    },
+    {
       name: `Samsung Galaxy A14 6.6" 4GB RAM/64GB ROM Android 13 - Black`,
-      shortname:"Samsung Galaxy A14 6.6...",
+      shortname: "Samsung Galaxy A14 6.6...",
       price: 121750,
-      category:"Mobile phone",
-      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/6.jpg?2300",
-      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/5.jpg?2300",
-      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/8.jpg?2300",
-      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/1.jpg?2300",
-      reviews:"⭐⭐⭐ 110 reviews",
-      shortDetails:`PUnleash the Galaxy A14 4G's enduring battery for work and play. Enjoy lag-free 4G gaming on a sleek device with expandable storage. Capture stunning moments with a versatile camera and immerse yourself in a 6.6" Infinity-V FHD+ display. Seamlessly connect with Google Meet and transfer files swiftly with Quick Share between Galaxy devices.`,
+      category: "Mobile phone",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/6.jpg?2300",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/5.jpg?2300",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/8.jpg?2300",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/1.jpg?2300",
+      reviews: "⭐⭐⭐ 110 reviews",
+      shortDetails: `PUnleash the Galaxy A14 4G's enduring battery for work and play. Enjoy lag-free 4G gaming on a sleek device with expandable storage. Capture stunning moments with a versatile camera and immerse yourself in a 6.6" Infinity-V FHD+ display. Seamlessly connect with Google Meet and transfer files swiftly with Quick Share between Galaxy devices.`,
       specifications: `<div>Key Specifications </div>
       <ul>
         <ul class="list-group">
@@ -340,18 +314,18 @@
 </ul>
       
         </ul>`
-        },
-        {
+    },
+    {
       name: `Edifier G2000 32W Bluetooth USB Computer Speakers`,
-      shortname:"Edifier G2000 32W",
+      shortname: "Edifier G2000 32W",
       price: 18021,
-      category:"Computer Speakers",
-      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/5.jpg?9636",
-      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/6.jpg?9636",
-      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/4.jpg?9636",
-      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/3.jpg?9636",
-      reviews:"⭐⭐⭐⭐ 69 reviews",
-      shortDetails:`Established in 1996, Edifier specializes in premium audio solutions that showcase technological innovation and design elegance.
+      category: "Computer Speakers",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/5.jpg?9636",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/6.jpg?9636",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/4.jpg?9636",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/89/529218/3.jpg?9636",
+      reviews: "⭐⭐⭐⭐ 69 reviews",
+      shortDetails: `Established in 1996, Edifier specializes in premium audio solutions that showcase technological innovation and design elegance.
       We deliver outstanding sound experiences through a wide range of sound systems for personal entertainment and professional excellence. `,
       specifications: `<h4>Specifications</h4>
 <ul class="list-group">
@@ -383,18 +357,18 @@
 
       
         </ul>`
-        },
-        {
+    },
+    {
       name: `Temperature Display Water Bottle 500ml - BLACK`,
-      shortname:"Temperature Display Water Bottle",
+      shortname: "Temperature Display Water Bottle",
       price: 5100,
-      category:"Water Bottles",
-      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/8676432/4.jpg?9435",
-      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/8676432/1.jpg?9435",
-      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/8676432/2.jpg?0294",
-      fourthImage:"https://ng.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/97/8676432/3.jpg?0294",
-      reviews:"⭐ 1 reviews",
-      shortDetails:`The smart water bottle has a LED display,water leak proof,it's low energy consumption and without a battery change,That can use several years! Press the top of the thermos softly,Sensitive capacity touch-cover can show the temperature of water inside the thermos immediately that can avoid the embarrassment of burning your.PREMIUM Material `,
+      category: "Water Bottles",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/8676432/4.jpg?9435",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/8676432/1.jpg?9435",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/8676432/2.jpg?0294",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/97/8676432/3.jpg?0294",
+      reviews: "⭐ 1 reviews",
+      shortDetails: `The smart water bottle has a LED display,water leak proof,it's low energy consumption and without a battery change,That can use several years! Press the top of the thermos softly,Sensitive capacity touch-cover can show the temperature of water inside the thermos immediately that can avoid the embarrassment of burning your.PREMIUM Material `,
       specifications: `<div>Key Specifications </div>
       <ul>
         <ul class="list-group">
@@ -426,9 +400,9 @@
 
       
         </ul>`
-        }, 
- 
-      ]
+    },
+
+  ]
   const flash = () => {
     allProduct.map((wholeCard, index) => {
       allcards.innerHTML += `
@@ -438,7 +412,7 @@
     <p class="card-title"><small class="fw-semibold">${wholeCard.name}</small></p>
     <h6 class="card-title">₦${wholeCard.price}</h6>
     <p class="fw-semibold">
-      <small>Imbibe</small>
+      <img style="width: 30px;" src="./Images/Get your package copy.webp" alt="">
       </p>
     
     <a href="#" class=" orangedTextNew" onclick="add(${index})"><i class="bi bi-view-list"></i></a>
@@ -449,19 +423,20 @@
   }
   flash()
 
-  
-    cateGory = [
-      {name: `GAOMON M10K PRO Graphics DrawingTablet With Battery-Free Pen`,
-      shortname:"GAOMON M10K PRO Graphics",
+
+  cateGory = [
+    {
+      name: `GAOMON M10K PRO Graphics DrawingTablet With Battery-Free Pen`,
+      shortname: "GAOMON M10K PRO Graphics",
       price: 585500,
-      category:"Graphics Tablets",
-      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/1.jpg?7060",
-      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/6.jpg?7060",
-      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/5.jpg?7060",
-      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/3.jpg?7060",
-      reviews:"⭐ 1 reviews",
-      shortDetails:`[Support for Android OS]--M10K PRO can support Android OS 6.0 or later. Connect the tablet to your Android mobile phone/tablet with OTG adapter, then we can start the art creation freely. `,
-      specifications:`<h4>Key Features</h4>
+      category: "Graphics Tablets",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/1.jpg?7060",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/6.jpg?7060",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/5.jpg?7060",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/87/6186121/3.jpg?7060",
+      reviews: "⭐ 1 reviews",
+      shortDetails: `[Support for Android OS]--M10K PRO can support Android OS 6.0 or later. Connect the tablet to your Android mobile phone/tablet with OTG adapter, then we can start the art creation freely. `,
+      specifications: `<h4>Key Features</h4>
 <ul class="list-group">
     <li class="list-group-item">Support for Android OS.</li>
     <li class="list-group-item">AP32 battery-free stylus Pen.</li>
@@ -497,18 +472,19 @@
     <li class="list-group-item">Shop Type: Jumia Mall</li>
 </ul>
 `
-        },
-        {name: `GAOMON M10K PRO Graphics DrawingTablet With Battery-Free Pen`,
-      shortname:"GAOMON M10K PRO Graphics",
+    },
+    {
+      name: `GAOMON M10K PRO Graphics DrawingTablet With Battery-Free Pen`,
+      shortname: "GAOMON M10K PRO Graphics",
       price: 393700,
-      category:"Graphics Tablets",
-      firstImage:"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/5.jpg?6464",
-      secondImage:"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/2.jpg?6464",
-      thirdImage:"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/1.jpg?6464",
-      fourthImage:"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/6.jpg?6464",
-      reviews:`<span class="bg-secondary">⭐</span> 0 reviews`,
-      shortDetails:`<h4>Product Details</h4>`,
-      specifications:`
+      category: "Graphics Tablets",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/5.jpg?6464",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/2.jpg?6464",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/1.jpg?6464",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/6.jpg?6464",
+      reviews: `<span class="bg-secondary">⭐</span> 0 reviews`,
+      shortDetails: `<h4>Product Details</h4>`,
+      specifications: `
 <ul class="list-group">
     <li class="list-group-item">Product number: 2N9A4UA</li>
     <li class="list-group-item">Product name: HP Laptop 15-dy2074nr</li>
@@ -554,18 +530,19 @@
 </ul>
 
 `
-        },
-        {name: `Hp Pavilion 15 X360 11th Gen Intel Core™ I5,16GB RAM 1TB SSD, Backlit Keyboard, Wins 10`,
-      shortname:"Hp Pavilion 15 X360 11ths",
+    },
+    {
+      name: `Hp Pavilion 15 X360 11th Gen Intel Core™ I5,16GB RAM 1TB SSD, Backlit Keyboard, Wins 10`,
+      shortname: "Hp Pavilion 15 X360 11ths",
       price: 660000,
-      category:"Laptops",
-      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/2.jpg?8423",
-      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/5.jpg?8423",
-      thirdImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/1.jpg?8423",
-      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/4.jpg?8423",
-      reviews:`⭐ 1 reviews`,
-      shortDetails:``,
-      specifications:`
+      category: "Laptops",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/2.jpg?8423",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/5.jpg?8423",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/1.jpg?8423",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/691429/4.jpg?8423",
+      reviews: `⭐ 1 reviews`,
+      shortDetails: ``,
+      specifications: `
       <h4>Product Details</h4>
 <ul class="list-group">
     <li class="list-group-item">Product number: </li>
@@ -615,18 +592,19 @@
 
 
 `
-        },
-        {name: `Hp Envy 13 X360 Intel Core I7 11th Gen 8GB RAM/512GB SSD Win 10 + Headset`,
-      shortname:"Hp Envy 13 X360 Intel",
+    },
+    {
+      name: `Hp Envy 13 X360 Intel Core I7 11th Gen 8GB RAM/512GB SSD Win 10 + Headset`,
+      shortname: "Hp Envy 13 X360 Intel",
       price: 843500,
-      category:"Laptops",
-      firstImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/231618/4.jpg?8315",
-      secondImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/231618/3.jpg?8315",
-      thirdImage:"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/1.jpg?6464",
-      fourthImage:"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/231618/1.jpg?8315",
-      reviews:`<span class="bg-secondary">⭐</span> No reviews`,
-      shortDetails:`HP ENVY x360 Convert 13X360MicroprocessorIntel Core i7-1165G7 (up to 4.7 GHz with Intel Turbo Boost Technology Intel Integrated SoCMemory, standard8 GB DDR4-3200 SDRAM Video graphicsIntel® Iris® Xᵉ GraphicsIntegratedHard drive512 GB M.2 SSDOptical driveOptical drive not includedDisplay13.3"`,
-      specifications:`
+      category: "Laptops",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/231618/4.jpg?8315",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/231618/3.jpg?8315",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/23/4963502/1.jpg?6464",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/231618/1.jpg?8315",
+      reviews: `<span class="bg-secondary">⭐</span> No reviews`,
+      shortDetails: `HP ENVY x360 Convert 13X360MicroprocessorIntel Core i7-1165G7 (up to 4.7 GHz with Intel Turbo Boost Technology Intel Integrated SoCMemory, standard8 GB DDR4-3200 SDRAM Video graphicsIntel® Iris® Xᵉ GraphicsIntegratedHard drive512 GB M.2 SSDOptical driveOptical drive not includedDisplay13.3"`,
+      specifications: `
       <h4>Product Details</h4>
 <ul class="list-group">
     <li class="list-group-item">Product number: 3A7Y1UA</li>
@@ -673,8 +651,8 @@
 
 
 `
-        },
-      ]
+    },
+  ]
   const secondCard = () => {
     cateGory.map((wholeCar, index) => {
       cateGoRy.innerHTML += `
@@ -684,27 +662,134 @@
     <p class="card-title"><small class="fw-semibold">${wholeCar.name}</small></p>
     <h6 class="card-title">₦${wholeCar.price}</h6>
     <p class="fw-semibold">
-      <small>Imbibe</small>
+      <img style="width: 30px;" src="./Images/Get your package copy.webp" alt="">
       </p>
     
     <a href="#" class=" orangedTextNew" onclick="addCategory(${index})"><i class="bi bi-view-list"></i></a>
   </div>
 </div>`
-
     })
   }
   secondCard()
-  const add=(x)=>{
-    let cardData = allProduct[x] 
-    console.log(cardData)
-    JSON.stringify(cardData)
-    localStorage.setItem("productData",JSON.stringify(cardData))
+  headPhone = [
+    {
+      name: `BENGOO G9000 Stereo Gaming Headset For PS4 PC Xbox One PS5`,
+      shortname: "ENGOO G9000 Stereo Gaming Headset",
+      price: 136709,
+      category: "Headsets",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/76/7376412/1.jpg?7349",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/76/7376412/7.jpg?7349",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/76/7376412/5.jpg?7349",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/76/7376412/4.jpg?7349",
+      reviews: `<span class="bg-secondary">⭐</span> No reviews`,
+      shortDetails: `HP ENVY x360 Convert 13X360MicroprocessorIntel Core i7-1165G7 (up to 4.7 GHz with Intel Turbo Boost Technology Intel Integrated SoCMemory, standard8 GB DDR4-3200 SDRAM Video graphicsIntel® Iris® Xᵉ GraphicsIntegratedHard drive512 GB M.2 SSDOptical driveOptical drive not includedDisplay13.3"`,
+      specifications: `
+      <ul class="list-group w-75 mx-auto">
+      <li class="list-group-item">
+      <p>Hello, thank you so much for your interest in our product.</p>
+      <img class="w-100 mx-auto" src="https://ng.jumia.is/cms/external/pet/GE779EA4KRG4PNAFAMZ/283a6527b837230c88da13e7ec867a62.jpg" alt="">
+      <p>Black</p>
+      </li>
+      <li class="list-group-item">
+      <img class="w-100 mx-auto" src="https://ng.jumia.is/cms/external/pet/GE779EA4KRG4PNAFAMZ/c19fbccfb5200192b0aa3df8a3b83cce.jpg" alt="">
+      <p>↑ Blue ↑</p>
+      </li>
+      <li class="list-group-item">
+      <img class="w-100 mx-auto" src="https://ng.jumia.is/cms/external/pet/GE779EA4KRG4PNAFAMZ/7dbaf1db7cefe05871e773ed2dd8caf3.jpg" alt="">
+      <p>↑ Orange ↑</p>
+      </li>
+      <li class="list-group-item">
+      <img class="w-100 mx-auto" src="https://ng.jumia.is/cms/external/pet/GE779EA4KRG4PNAFAMZ/5ffb46868772af4a4186ad94a7683366.jpg" alt="">
+      <p>↑ Pink ↑</p>
+      </li>
+      <li class="list-group-item">
+      <img class="w-100 mx-auto" src="https://ng.jumia.is/cms/external/pet/GE779EA4KRG4PNAFAMZ/88c5342896f18004d1cafb9c101a7d46.jpg" alt="">
+      <p>↑ Purple ↑</p>
+      </li>
+      <img class="w-100 mx-auto" src="https://ng.jumia.is/cms/external/pet/GE779EA4KRG4PNAFAMZ/0ffdfb77583859d8f458002688d7fa07.jpg" alt="">
+      <p>↑ Red ↑</p>
+      </li>
+    </li>
+      <img class="w-100 mx-auto" src="https://ng.jumia.is/cms/external/pet/GE779EA4KRG4PNAFAMZ/65812b8e0c34cd5c04c435541249b771.jpg" alt="">
+      <p>↑ White ↑</p>
+      </li>
+      
+</ul>
+
+
+<h4>Specifications</h4>
+<div class="product-details">
+    <h2>KEY FEATURES</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Brand: ‎BENGOO</li>
+        <li class="list-group-item">Series: ‎G9000</li>
+        <li class="list-group-item">Item model number: ‎G9000</li>
+        <li class="list-group-item">Hardware Platform: ‎PC，PS4 XBOX ONE，XBOX 360</li>
+        <li class="list-group-item">Item Weight: ‎9.6 ounces</li>
+        <li class="list-group-item">Product Dimensions: ‎8.3 x 4.4 x 7.9 inches</li>
+        <li class="list-group-item">Item Dimensions LxWxH: ‎8.3 x 4.4 x 7.9 inches</li>
+        <li class="list-group-item">Color: ‎Blue</li>
+        <li class="list-group-item">Manufacturer: ‎Bengoo Inc.</li>
+        <li class="list-group-item">Country of Origin: ‎China</li>
+        <li class="list-group-item">Is Discontinued By Manufacturer: ‎No</li>
+        <li class="list-group-item">Date First Available: ‎December 14, 2017</li>
+    </ul>
+    
+    <h2>WHAT’S IN THE BOX</h2>
+    <p>Please refer to the description.</p>
+    
+    <h2>SPECIFICATIONS</h2>
+    <ul class="list-group">
+        <li class="list-group-item">SKU: GE779EA4KRG4PNAFAMZ</li>
+        <li class="list-group-item">Size (L x W x H cm): 21.1x11.2x20.1</li>
+        <li class="list-group-item">Weight (kg): 0.272</li>
+        <li class="list-group-item">Color: Black</li>
+    </ul>
+</div>
+
+
+`
+    },
+  ]
+  const addsDisplayed=()=>{
+    headPhone.map((addCard, index)=>{
+      adds.innerHTML=`<div class="row m-4 text-white" style="background: black;">
+      <div class="col-lg-6 col-sm-12 m-2 mee">
+        <br>
+        <span class="h5 " style="color: #0F6;">Categories</span>
+        <p class="fw-semibold" style="font-size: 70px;">Elevate Your Audio Adventure</p>
+        <br>
+
+        <button class="m-3 shadow-sm text-dark p-2 rounded" onclick="addHeadphone(${index})" style="background: #0F6;">Buy
+          Now</button>
+      </div>
+      <div class="col-lg-4 d-none d-md-block ">
+        <img class="w-100" src="https://admin.ibengoo.com/static/uploadfile/2022-02/4cc7e9e202dbbb48.png" alt="">
+      </div>
+    </div>
+`
+    })
   }
-  const addCategory=(x)=>{
-    let cardData = cateGory[x] 
+  addsDisplayed()
+
+
+  const add = (x) => {
+    let cardData = allProduct[x]
     console.log(cardData)
     JSON.stringify(cardData)
-    localStorage.setItem("productData",JSON.stringify(cardData))
+    localStorage.setItem("productData", JSON.stringify(cardData))
+  }
+  const addCategory = (x) => {
+    let cardData = cateGory[x]
+    console.log(cardData)
+    JSON.stringify(cardData)
+    localStorage.setItem("productData", JSON.stringify(cardData))
+  }
+  const addHeadphone = (x) => {
+    let cardData = headPhone[x]
+    console.log(cardData)
+    JSON.stringify(cardData)
+    localStorage.setItem("productData", JSON.stringify(cardData))
   }
 </script>
 

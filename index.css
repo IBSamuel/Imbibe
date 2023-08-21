@@ -62,19 +62,16 @@ border: 0;
   /* Gradient background for the scrollbar */
   .container::-webkit-scrollbar {
     width: 6px; /* Width of the scrollbar */
+    ;
 
   }
   
   .container::-webkit-scrollbar-thumb {
     height: 4px;
-    background-image: linear-gradient(to bottom, #DB4444, #ffff); /* Gradient colors */
+    background-image:#DB4444, #ffff; /* Gradient colors */
     border-radius: 3px; /* Border radius for the scrollbar thumb */
   }
-  
-  .container::-webkit-scrollbar-thumb:hover {
-    background-image: linear-gradient(to bottom, #ff3300, #ff9900); /* Gradient colors on hover */
-  }
-  
+   
   /* Hide scrollbar buttons in WebKit browsers */
   .container::-webkit-scrollbar-button {
     display: none;
