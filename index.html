@@ -38,10 +38,10 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item me-5">
-            <a class="nav-link active" href="#">About</a>
+            <a class="nav-link active" href="../About/About.html">About</a>
           </li>
           <li class="nav-item me-5">
-            <a class="nav-link active me-5" href="">SignUp</a>
+            <a class="nav-link active me-5" href="../Sign/SignUp.html">SignUp</a>
           </li>
           <div class="me-5">
           </div>
@@ -53,7 +53,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link ms-5"><i class="bi bi-cart3 h5"></i></a>
+            <a href="Cart.html" class="nav-link ms-5"><i class="bi bi-cart3 h5"></i></a>
           </li>
         </ul>
       </div>
@@ -215,8 +215,7 @@
       <div class="p-3 row gap-1 m-4" id="allcards">
       </div>
       <!-- Categories -->
-
-    </div>
+        </div>
     <!-- This month -->
     <div class="m-3">
       <span class="oranged rounded orangedText p-1"><small>sj</small></span>
@@ -226,16 +225,104 @@
     <!-- This month Div -->
     <div id="cateGoRy" class="row m-4"></div>
     <br>
-    <div id="adds"></div>
-        
+    <div id="adds"></div>  
   </div>
   <div class="m-3">
     <span class="oranged rounded orangedText p-1"><small>sj</small></span>
     <span class="orangedText fw-semibold">Our Product</span><br>
     <span class="h5">Explore Our Product</span>
   </div>
-  <div id="ourProduct">   
+  <div id="ourProduct" class="row"></div>
+  <br>
+  <!-- New Arrival -->
+  <div class="m-3">
+    <span class="oranged rounded orangedText p-1"><small>sj</small></span>
+    <span class="orangedText fw-semibold">Featured</span><br>
+    <span class="h5">New Arrival</span>
   </div>
+  <br>
+  <div class=" row m-3" id="playStation">
+   
+  </div>
+  <div class="text-center"><br>
+    <img class="w-50"  src="./Images/Frame 702.png" alt="">
+  </div>
+  <br>
+  <footer class="bg-dark p-3">
+    <div class="row ">
+      <div class="col-lg-3 text-white">
+        <p class="h6"> Imbibe</p>
+        <p class="fw-semibold">Subscribe</p>
+        <p>Get 10% off your first order</p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control bg-dark text-white" value="Enter your email"
+            aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text bg-dark" id="basic-addon2"><i class="bi bi-send text-white"></i></span>
+        </div>
+        <br>
+      </div>
+      <div class="col-lg-2 text-start text-white">
+        <small>
+          <p class="h6">Support</p>
+          <br>
+          <p>Gods Mercy Vila, Onipanu Ogbomosho, Oyo State </p>
+          <p>ibsam26700749@gmail.com</p>
+          <p>+234-913-342-56192 </p>
+        </small>
+      </div>
+      <div class="col-lg-2 text-white text-start">
+        <small>
+          <p class="h6">Account</p>
+          <br>
+          <p>My Account</p>
+          <p>Login/Register</p>
+          <p>Cart</p>
+          <p>Wishlist</p>
+          <p>Shop</p>
+        </small>
+      </div>
+      <div class="col-lg-2 text-white text-start">
+        <small>
+          <p class="h6">Quick Link</p>
+          <br>
+          <p>Privacy</p>
+          <p>Terms Of Use</p>
+          <p>FAQ</p>
+          <p>Contact</p>
+          <p>Shop</p>
+        </small>
+      </div>
+      <div class="col-lg-3 text-white text-start">
+        <small>
+          <p class="h6"><small>Download Imbibe</small></p>
+          <small>Save ₦10 with App New User Only</small>
+          <br>
+          <p></p>
+          <div class="d-flex me-2">
+            <img class="w-50" src="https://www.bdc.ca/globalassets/digizuite/40415-bdc-qr-code.jpg?v=498d76" alt="">
+            <div>
+              <span class="d-flex ms-2 border p-1 rounded">
+                <div><i class="bi bi-google-play h3"></i></div>
+                <span class="">
+                  <small> GET IT ON</small>
+                  <br>
+                  <small>Google play</small>
+                </span>
+              </span>
+              <span class="d-flex mt-2 ms-2 rounded p-1 border">
+                <div><i class="bi bi-apple h2"></i></div>
+                <span class="">
+                  <small> GET IT ON</small>
+                  <br>
+                  <small>Apple Store</small>
+                </span>
+              </span>
+            </div>
+          </div>
+        </small>
+      </div>
+    </div>
+  </footer>
 </body>
 <script>
   allProduct = [
@@ -403,7 +490,7 @@
     },
 
   ]
-  const flash = () => {
+  const flash = () => { 
     allProduct.map((wholeCard, index) => {
       allcards.innerHTML += `
     <div class="shadow-sm mb-2 mx-auto card border-0" style="width: 18rem;">
@@ -672,6 +759,7 @@
   }
   secondCard()
   headPhone = [
+
     {
       name: `BENGOO G9000 Stereo Gaming Headset For PS4 PC Xbox One PS5`,
       shortname: "ENGOO G9000 Stereo Gaming Headset",
@@ -771,26 +859,533 @@
     })
   }
   addsDisplayed()
+  addsProduct=[
+  {
+      name: `Infinix HOT 30i 6.56" 4GB RAM/128GB ROM Android 12 - Black`,
+      shortname: "Infinix HOT 30i",
+      price: 88200,
+      category: "Andriod Phones",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/74/6680922/1.jpg?5343",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/74/6680922/2.jpg?5342",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/74/6680922/3.jpg?5342",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/74/6680922/6.jpg?5343",
+      reviews: "⭐⭐⭐ 108 reviews",
+      shortDetails: `[Support for Android OS]--M10K PRO can support Android OS 6.0 or later. Connect the tablet to your Android mobile phone/tablet with OTG adapter, then we can start the art creation freely. `,
+      specifications: `<h4>Product details</h4>
+      <ul class="list-group">
+        <div class="mx-auto">
+        <img class="mx-auto text-center" src="https://ng.jumia.is/cms/external/pet/IN717MP4JJ398NAFAMZ/89bd52b7dcba25729020c0cf6646295b.jpg" alt="">
+        <img class="" src="https://ng.jumia.is/cms/external/pet/IN717MP4JJ398NAFAMZ/baca98129820e82a45a7524ab2d8dac2.jpg" alt="">
+        <img class="" src="https://ng.jumia.is/cms/external/pet/IN717MP4JJ398NAFAMZ/88d4ceb9670181642c8c6b337125b173.jpg" alt="">
+        </div>
+    
+</ul>
+
+<h4>What's in the Box</h4>
+<ul class="list-group">
+    <li class="list-group-item">M10K PRO X 1</li>
+    <li class="list-group-item">AP32 Battery-Free Pen x1</li>
+    <li class="list-group-item">Micro USB Cable x1</li>
+    <li class="list-group-item">Pen Nibs x 8</li>
+    <li class="list-group-item">Pen Clip x1</li>
+    <li class="list-group-item">Pen Case x1</li>
+    <li class="list-group-item">Felt Nib Bag x1</li>
+    <li class="list-group-item">Quick Start Guide x1</li>
+    <li class="list-group-item">Driver Download Card x1</li>
+</ul>
+
+<h4>Specifications</h4>
+<ul class="list-group">
+    <li class="list-group-item">SKU: GA455EA33PBG4NAFAMZ</li>
+    <li class="list-group-item">Product Line: GAOMON Official Store -COD</li>
+    <li class="list-group-item">Model: M10K PRO</li>
+    <li class="list-group-item">Production Country: China</li>
+    <li class="list-group-item">Size (L x W x H cm): 360*240*10.5 mm</li>
+    <li class="list-group-item">Weight (kg): 1.4</li>
+    <li class="list-group-item">Color: Black</li>
+    <li class="list-group-item">Main Material: IPS</li>
+    <li class="list-group-item">From the Manufacturer: CHINA</li>
+    <li class="list-group-item">Care Label: NO</li>
+    <li class="list-group-item">Shop Type: Jumia Mall</li>
+</ul>
+`
+    },
+    {
+      name: `Best Sales USB Type Cable Micro USB Fast Charging Mobile`,
+      shortname: "USB Type Cable Micro USB",
+      price: 6400,
+      category: "USB Flash Drive",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/74/2744171/2.jpg?7488  ",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/74/2744171/1.jpg?7488",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/74/2744171/6.jpg?7488",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/74/2744171/4.jpg?7488",
+      reviews: `<span class="text-light">⭐⭐⭐</span> No ratings available`,
+      shortDetails: `[Support for Android OS]--M10K PRO can support Android OS 6.0 or later. Connect the tablet to your Android mobile phone/tablet with OTG adapter, then we can start the art creation freely. `,
+      specifications: `<h4>Product details</h4>
+      <ul>
+        <div class="shipping-information">
+    <h2>WORLDWIDE SHIPPING (Except some countries and APO/FPO)</h2>
+    <p>Orders processed timely after the payment verification.</p>
+    <p>We only ship to confirmed order addresses. Your order address MUST MATCH your Shipping address.</p>
+    <p>The images shown are not the actual item and are for your reference only.</p>
+    <p>SERVICE TRANSIT TIME is provided by the carrier and excludes weekends and holidays. Transit times may vary, particularly during the holiday season.</p>
+    <p>If you have not received your shipment within 30 days from payment, please contact us.</p>
+</div>
+
+<div class="return-policy">
+    <h2>Return / Replacement</h2>
+    <p>We are happy to accept return/replacement within 7 days after the product is received under the following conditions. Or else, the return/replacement could not be issued.</p>
+    <ol>
+        <li>You are not satisfied with the product.</li>
+        <li>The product you received is defective.</li>
+        <li>You received the wrong product.</li>
+        <li>The product didn't arrive after the promised time. The product is not the same.</li>
+    </ol>
+    <p>Please note, the shipment cost will be jointly assumed by both sides. But if a product is defective or does not function properly, we will bear all the shipment cost. Please contact us before shipping out a return.</p>
+</div>
+
+<div class="feedback">
+    <h2>About Feedback</h2>
+    <p>We maintain high standards of excellence and strive for 100% customer satisfaction!</p>
+    <p>Feedback is very important. We request that you contact us immediately BEFORE you give us neutral or negative feedback, so that we can satisfactorily address your concerns. It is impossible to address issues if we do not know about them!</p>
+    <p>Thank you very much for browsing!</p>
+</div>
+
+<div class="additional-info">
+    <p>All Products Overseas Factory Outlet</p>
+    <p>If you want more details, please scroll down.</p>
+</div>
+
+      <div class="mx-auto gap-2 w-75">
+        <ul class="list-group" >
+          <div class="gap-3">
+            <img class="w-100" src="https://ae01.alicdn.com/kf/H00715cb44f15467697eb24000aa7500dK/Best-sales-USB-Type-C-Cable-Micro-USB-Fast-Charging-Mobile-Phone-Android-Charger-Type-C.jpg" alt="">
+            <img class="w-100" src="https://ae01.alicdn.com/kf/H31a154f6c53841038c72f934ed9c65a21/Best-sales-USB-Type-C-Cable-Micro-USB-Fast-Charging-Mobile-Phone-Android-Charger-Type-C.jpg" alt="">
+            <img class="w-100" src="https://ae01.alicdn.com/kf/H4914d05205244b49a8368809eac8fac21/Best-sales-USB-Type-C-Cable-Micro-USB-Fast-Charging-Mobile-Phone-Android-Charger-Type-C.jpg" alt="">
+            <img class="w-100" src="https://ae01.alicdn.com/kf/Hf998cd27b37e4de692a1c351ce6bfd311/Best-sales-USB-Type-C-Cable-Micro-USB-Fast-Charging-Mobile-Phone-Android-Charger-Type-C.jpg" alt="">
+            <img class="w-100" src="https://ae01.alicdn.com/kf/H128afa6731184ceb8d4361651a8ee803p/Best-sales-USB-Type-C-Cable-Micro-USB-Fast-Charging-Mobile-Phone-Android-Charger-Type-C.jpg" alt="">
+            <img class="w-100" src="https://ae01.alicdn.com/kf/H2f54c26058fe4bea877b3d0cbe661b36Q/Best-sales-USB-Type-C-Cable-Micro-USB-Fast-Charging-Mobile-Phone-Android-Charger-Type-C.jpg" alt="">
+            </div>
+            </div>
+    
+<div class="specifications">
+  <div class="product-details w-100">
+    <h2>SPECIFICATIONS</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Brand Name: Swalle</li>
+        <li class="list-group-item">Connector B: TYPE-C</li>
+        <li class="list-group-item">Connector B: Micro USB</li>
+        <li class="list-group-item">Maximum Current: 2A</li>
+        <li class="list-group-item">Origin: (Origin)</li>
+        <li class="list-group-item">Surface Material: PVC</li>
+        <li class="list-group-item">Connector A: USBA</li>
+        <li class="list-group-item">Features: Alloy Connector</li>
+        <li class="list-group-item">Has Retail Package: Yes</li>
+        <li class="list-group-item">Compatible Model 1: Type C For Samsung Note 9, 8, S9, S8, S8 Plus, For Huawei Mate 20 Pro</li>
+        <li class="list-group-item">Compatible Model 2: Micro USB Cable For Samsung S7, S6, For S6, For Xiaomi</li>
+        <li class="list-group-item">Support: Drop-shipping</li>
+    </ul>
+    
+    <h2>WHAT’S IN THE BOX</h2>
+    <p>1×data line</p>
+    
+    <h2>SPECIFICATIONS</h2>
+    <ul class="list-group">
+        <li class="list-group-item">SKU: GE779EA2VRB01NAFAMZ</li>
+        <li class="list-group-item">Model: Data Line</li>
+        <li class="list-group-item">Production Country: China</li>
+        <li class="list-group-item">Size (L x W x H cm): 20 x 10 x 10</li>
+        <li class="list-group-item">Weight (kg): 0.3</li>
+        <li class="list-group-item">Color: Red for Micro 1m</li>
+        <li class="list-group-item">Main Material: Synthetic</li>
+    </ul>
+</div>
+
+</div>
 
 
+    
+</ul>
+
+
+`
+    },
+    {
+      name: `Hisense 90 Litres Frost Low Noise Environment-Friendly Tech (REF 093 DR)- Silver With One Year Warranty`,
+      shortname: "Hisense 90 Litres ",
+      price: 87480,
+      category: "Fridges",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/4842821/1.jpg?9248",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/4842821/1.jpg?9248",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/4842821/2.jpg?9248",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/4842821/3.jpg?3095",
+      reviews: "⭐⭐⭐⭐ 34 Verifield ratings",
+      shortDetails: `[Support for Android OS]--M10K PRO can support Android OS 6.0 or later. Connect the tablet to your Android mobile phone/tablet with OTG adapter, then we can start the art creation freely. `,
+      specifications: `<h4>Product details</h4>
+      <ul class="list-group">
+        <div class="mx-auto">
+        <img class="mx-auto text-center" src="https://ng.jumia.is/cms/external/pet/IN717MP4JJ398NAFAMZ/89bd52b7dcba25729020c0cf6646295b.jpg" alt="">
+        <img class="" src="https://ng.jumia.is/cms/external/pet/IN717MP4JJ398NAFAMZ/baca98129820e82a45a7524ab2d8dac2.jpg" alt="">
+        <img class="" src="https://ng.jumia.is/cms/external/pet/IN717MP4JJ398NAFAMZ/88d4ceb9670181642c8c6b337125b173.jpg" alt="">
+        </div>
+    
+</ul>
+
+<div class="product-details">
+    <h2>Product Details</h2>
+    <p>Introducing the unique single door refrigerator. It comes with a refrigerator and a freezer compartment for cooling and freezing beverages and perishable food items respectively. The freezer compartment has a lid cover to prevent temperature loss from it, thereby keeping food items fresh and frozen for a long period of time after power outage.</p>
+
+    <p>The Hisense single door refrigerator has a 90 liters capacity, spacious enough to accommodate your ever-increasing foods and perishables. It also comes with extra shelf space mounted on the door to accommodate wines, groceries, and other small items. The shelves can also be adjusted to suit the size of any food item that seems large to fit in.</p>
+
+    <p>Stylish and functional, the Hisense Single Door Refrigerator 093DR is designed to fit in tiny spaces. The sleek refrigerator has a 90-liter capacity and delivers a no-frost, low-noise operation.</p>
+
+    <p>Suitable for rooms, and offices and best suited for personal use, this environmentally friendly fridge features monolithic foam and a door handle that makes opening and closing easy.</p>
+
+    <h3>No Frost</h3>
+    <p>The Hisense refrigerator is equipped with a No Frost feature. This means that it utilizes a system that circulates cold air evenly throughout the refrigerator, preventing the build-up of frost and ice on the interior surfaces. As a result, you don't need to manually defrost the refrigerator, saving you time and effort. The No Frost feature helps maintain optimal cooling performance, preserves food quality, and ensures hassle-free operation.</p>
+
+    <h3>Low Noise</h3>
+    <p>The Hisense refrigerator is designed to operate with low noise levels. It incorporates advanced noise reduction technologies and sound-dampening materials to minimize operational noise. This feature ensures a quiet and peaceful environment in your kitchen or living space, allowing you to enjoy your surroundings without any disturbances.</p>
+
+    <h3>Environment-Friendly</h3>
+    <p>The Hisense refrigerator is built with an environmentally friendly design. It incorporates energy-efficient components and features that contribute to reducing energy consumption. This helps lower greenhouse gas emissions and promotes energy conservation. Additionally, the refrigerator may use eco-friendly refrigerants that have a lower impact on the ozone layer and global warming potential, contributing to environmental sustainability.</p>
+
+    <p>These personalized features in the Hisense refrigerator, including the No Frost functionality, low noise operation, and environment-friendly design, offer convenience, efficient cooling, quiet operation, and contribute to environmental sustainability.</p>
+</div>
+
+<div class="product-specifications">
+    <h2>Specifications</h2>
+    
+    <h3>KEY FEATURES</h3>
+    <ul class="list-group">
+        <li class="list-group-item">Volume: 90 Litres</li>
+        <li class="list-group-item">Colour: Silver</li>
+        <li class="list-group-item">Door Handle</li>
+        <li class="list-group-item">No Frost</li>
+        <li class="list-group-item">Low Noise</li>
+        <li class="list-group-item">Environment Friendly</li>
+        <li class="list-group-item">Dimensions: 480W x 860H x 460D [mm]</li>
+    </ul>
+    
+    <h3>SPECIFICATIONS</h3>
+    <ul class="list-group">
+        <li class="list-group-item">SKU: HI368HA30N9RUNAFAMZ</li>
+        <li class="list-group-item">Model: 093DR</li>
+        <li class="list-group-item">Weight (kg): 23</li>
+        <li class="list-group-item">Color: Silver</li>
+        <li class="list-group-item">Shop Type: Jumia Mall</li>
+    </ul>
+</div>
+
+`
+    },
+    {
+      name: `Binatone 2 Litres (CEJ-2005) Electric Jug - Black`,
+      shortname: "Binatone 2 Litres (CEJ-2005)",
+      price: 13385,
+      category: "Keetles",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/049652/2.jpg?8044",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/049652/1.jpg?2694",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/049652/3.jpg?7442",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/049652/2.jpg?8044",
+      reviews: "⭐⭐⭐ 108 reviews",
+      shortDetails: `[Support for Android OS]--M10K PRO can support Android OS 6.0 or later. Connect the tablet to your Android mobile phone/tablet with OTG adapter, then we can start the art creation freely. `,
+      specifications: `<h4>Product details</h4>
+      < class="list-group">
+        <div class="mx-auto">
+        <img class="mx-auto text-center" src="https://ng.jumia.is/cms/external/pet/IN717MP4JJ398NAFAMZ/89bd52b7dcba25729020c0cf6646295b.jpg" alt="">
+        <img class="" src="https://ng.jumia.is/cms/external/pet/IN717MP4JJ398NAFAMZ/baca98129820e82a45a7524ab2d8dac2.jpg" alt="">
+        <img class="" src="https://ng.jumia.is/cms/external/pet/IN717MP4JJ398NAFAMZ/88d4ceb9670181642c8c6b337125b173.jpg" alt="">
+        </div>
+    
+
+<div class="product-details">
+    <h2>Product Details</h2>
+    
+    <p>The Binatone High-Speed Electric Kettle CEJ-2005 offers a range of features designed to make boiling water quick, convenient, and safe. Here's an explanation of these features:</p>
+    
+    <h3>Features</h3>
+    <>
+        <li>High-Speed Electric Kettle: The kettle is designed to boil water quickly, saving you time and energy in the kitchen. With its high-speed operation, you can enjoy hot water for your beverages or cooking needs in no time.</li>
+        <li>Colour: The kettle comes in an elegant black color, adding a sleek and stylish touch to your kitchen decor.</li>
+        <li>Capacity: The kettle has a generous capacity of 2 liters, allowing you to boil a large volume of water at once. This is ideal for preparing hot drinks or for use in cooking tasks that require a significant amount of hot water.</li>
+        <li>Auto Switch Off: The kettle is equipped with an auto switch-off feature that automatically turns off the kettle once the water has reached its boiling point. This feature ensures safety and prevents the water from boiling dry, reducing the risk of accidents and energy waste.</li>
+        <li>Dry Boil Safety Protection: The kettle has a dry boil safety protection mechanism that automatically switches off the kettle if it is turned on without any water inside. This feature prevents the kettle from overheating and protects it from damage.</li>
+        <li>Removable Fine Mesh Filter: The kettle features a removable fine mesh filter that helps to trap any impurities or limescale particles present in the water. This ensures that you get clean and filtered water for your beverages.</li>
+        <li>On/Off Switch with Light Indication: The kettle has a convenient on/off switch with a light indication, allowing you to easily control its operation. The light indicator helps you determine whether the kettle is on or off at a glance.</li>
+        <li>Power: The kettle operates with a power range of 1850-2200W, providing efficient and quick heating of water.</li>
+    
+    
+    <p>These personalized features of the Binatone High-Speed Electric Kettle CEJ-2005, including its high-speed operation, 2-liter capacity, auto switch-off, dry boil safety protection, removable fine mesh filter, on/off switch with light indication, and power range, are designed to enhance your boiling experience. With its efficient performance and safety features, this kettle offers convenience and peace of mind in your daily routine.</p>
+</div>
+
+
+<div class="product-specifications">
+    <h2>Specifications</h2>
+    
+    <h3>KEY FEATURES</h3>
+    <ul>
+        <li>High-Speed Electric Kettle CEJ-2005</li>
+        <li>Colour: Black</li>
+        <li>Capacity: 2 liters</li>
+        <li>Auto switch off</li>
+        <li>Dry boil safety protection</li>
+        <li>Removable fine mesh filter</li>
+        <li>On/Off switch with a light indication</li>
+        <li>Power: 1850-2200W</li>
+    </ul>
+    
+    <h3>WHAT’S IN THE BOX</h3>
+    <p>Please refer to the product description for details.</p>
+    
+    <h3>SPECIFICATIONS</h3>
+    <ul>
+        <li>SKU: BI681HL1ISXYSNAFAMZ</li>
+        <li>Product Line: Binatone</li>
+        <li>Model: CEJ-2005</li>
+        <li>Weight (kg): 2</li>
+        <li>Color: BLACK</li>
+        <li>Area of Use: Dining Room | Kitchen | Home Office</li>
+    </ul>
+</div>
+
+`
+    },
+
+  ]
+  const ourProducts=()=>{
+  addsProduct.map((wholeCar,index)=>{
+    ourProduct.innerHTML+=`<div class="shadow-sm mb-2 mx-auto card border-0" style="width: 18rem;">
+  <img src="${wholeCar.firstImage}" class="card-img-top mx-auto" alt="...">
+  <div class="card-body">
+    <p class="card-title"><small class="fw-semibold">${wholeCar.name}</small></p>
+    <h6 class="card-title">₦${wholeCar.price}</h6>
+    <p class="fw-semibold">
+      <img style="width: 30px;" src="./Images/Get your package copy.webp" alt="">
+      </p>
+    
+    <a href="#" class=" orangedTextNew" onclick="addOurProduct(${index})"><i class="bi bi-view-list"></i></a>
+  </div>
+</div>
+    `})
+}
+ourProducts()
+ newArrival=[
+  {
+      name: `Alexa Echo Dot Smart Speaker + Clock`,
+      shortname: "Playstation 5",
+      price: 86000,
+      category: "Bluetooth Speaker",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/66/2244601/1.jpg?0328",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/5490752/3.jpg?7906",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/5490752/4.jpg?7906",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/97/5490752/5.jpg?7906",
+      reviews: "⭐ 1 reviews",
+      shortDetails: `Black and White version of the PS5 coming out on sale. `,
+      specifications: `<h4>Key Features</h4>
+<ul class="list-group">
+  <img src="https://ng.jumia.is/cms/external/pet/SO521EC1K7QN5NAFAMZ/caa41716f626f574b47c1a0c4eb61ad9.jpg" alt="  ">
+</ul>
+
+<div class="ps5-features">
+    <h2>PlayStation 5 Features</h2>
+    
+    <h3>Backwards Compatibility</h3>
+    <p>Play a back catalog of PS4™ games on your PS5 console.</p>
+    
+    <h3>Game Boost</h3>
+    <p>Enjoy faster and smoother frame rates in select PS4 and PS VR games.</p>
+    
+    <h3>Upgrade PS4 Games to Digital PS5 Games</h3>
+    <p>The PS5 console gives game publishers the ability to let players upgrade their disc and digital PS4 games to digital PS5 games.</p>
+    
+    <h3>PlayStation®VR Integration</h3>
+    <p>Connect your PlayStation VR to your PS5 console to enjoy supported PS VR games. To set up your PS VR with your PS5 console you’ll need your PlayStation Camera2 for PS4 and a PlayStation Camera adaptor (no purchase necessary).</p>
+    
+    <h3>Lightning Speed</h3>
+    <p>Harness the power of a custom CPU, GPU, and SSD with Integrated I/O that rewrite the rules of what a PlayStation console can do.</p>
+    
+    <h3>Stunning Games</h3>
+    <p>Marvel at incredible graphics and experience new PS5 features.</p>
+    
+    <h3>Breathtaking Immersion</h3>
+    <p>Discover a deeper gaming experience with support for haptic feedback, adaptive triggers, and 3D Audio technology.</p>
+    
+    <p>The PS5 console unleashes new gaming possibilities that you never anticipated. Experience lightning-fast loading with an ultra-high-speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio, and an all-new generation of incredible PlayStation games.</p>
+</div>
+<div class="product-specifications">
+    <h2>Specifications</h2>
+    
+    <h3>KEY FEATURES</h3>
+    <ul>
+        <li>Lightning Speed - Harness the power of a custom CPU, GPU, and SSD with Integrated I/O that rewrite the rules of what a PlayStation console can do.</li>
+        <li>Stunning Games - Marvel at incredible graphics and experience new PS5 features.</li>
+        <li>Breathtaking Immersion - Discover a deeper gaming experience with support for haptic feedback, adaptive triggers, and 3D Audio technology.</li>
+        <li>Dual-Sense wireless controller</li>
+    </ul>
+    
+    <h3>WHAT’S IN THE BOX</h3>
+    <ul>
+        <li>PlayStation 5 console</li>
+        <li>Dual-Sense wireless controller</li>
+        <li>HDMI cable</li>
+        <li>AC power cable</li>
+        <li>USB-A to USB-C cable</li>
+        <li>Manual (Japanese)</li>
+    </ul>
+    
+    <h3>SPECIFICATIONS</h3>
+    <ul>
+        <li>SKU: SO521EC4X5IC3NAFAMZ</li>
+        <li>Product Line: Zeemak</li>
+        <li>Model: PS5</li>
+        <li>Weight (kg): 4.5</li>
+        <li>Color: White</li>
+        <li>Shop Type: Jumia Mall</li>
+    </ul>
+</div>
+
+`
+    },
+    {
+      name: `Imperio Avanti For Him 100ML Baron De Bellefleur`,
+      shortname: "Avanti",
+      price: 70000,
+      category: "Fragrances",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/83/4933921/2.jpg?8445",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/83/4933921/1.jpg?8265",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/83/4933921/3.jpg?8265",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/83/4933921/2.jpg?8445",
+      reviews: "⭐ 1 reviews",
+      shortDetails: `Avanti Perfume `,
+      specifications: `<h4>Key Features</h4>
+      <div class="product-details">
+    <h2>Product Details</h2>
+    
+    <h3>Avanti For Him 100ML by Baron De Bellefieur</h3>
+    <p>Avanti For Him is a fragrance by Imperio anchored with spicy fragrances like Cardamom, Nutmeg, and Cinnamon that leave an everlasting scent of musk especially designed for every man of strong character.</p>
+    
+    <h3>What does Avanti For Him smell like?</h3>
+    <p>Its notes are a blend of spicy and more earthy or woody notes. However, Avanti For Him doesn't have a heavy or rugged aroma to it, it is clean and warm instead. Avanti For Him is a great scent for those who want something youthful, those who want a versatile everyday wearer, those who like clean and energetic scents, and those who just appreciate a good fragrance.</p>
+    
+    <h3>Product Specifications</h3>
+    <ul>
+        <li>Brand: IMPERIO</li>
+        <li>Fragrance Type: Eau de Parfum</li>
+        <li>Size: 100ml</li>
+        <li>Targeted Group: Men</li>
+        <li>Fragrance Family: Floral & Woody</li>
+        <li>Fragrance Note: Cardamom, Nutmeg, Cinnamon</li>
+    </ul>
+    
+    <h3>Exude confidence and charm like the world is yours for the taking with our classic Perfume; Avanti For Him</h3>
+    
+    <h3>Specifications</h3>
+    <ul>
+        <li>SKU: IM719PF318WEONAFAMZ</li>
+        <li>Weight (kg): 0.1</li>
+    </ul>
+</div>
+`
+    },
+    {
+      name: `Alexa Echo Dot Smart Speaker + Clock`,
+      shortname: "Alexa Echo Dot",
+      price:  86000,
+      category: "Bleutooth Speakers",
+      firstImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/28/1735552/1.jpg?6690",
+      secondImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/28/1735552/2.jpg?6690",
+      thirdImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/28/1735552/3.jpg?6690",
+      fourthImage: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/28/1735552/1.jpg?6690",
+      reviews: "⭐ 1 reviews",
+      shortDetails: `Alexa Echo Dot `,
+      specifications: `<h4>Key Features</h4>
+      <div class="product-details">
+    <h2>Product Details</h2>
+    
+    <h3>Avanti For Him 100ML by Baron De Bellefieur</h3>
+    <p>Avanti For Him is a fragrance by Imperio anchored with spicy fragrances like Cardamom, Nutmeg, and Cinnamon that leave an everlasting scent of musk especially designed for every man of strong character.</p>
+    
+    <h3>What does Avanti For Him smell like?</h3>
+    <p>Its notes are a blend of spicy and more earthy or woody notes. However, Avanti For Him doesn't have a heavy or rugged aroma to it, it is clean and warm instead. Avanti For Him is a great scent for those who want something youthful, those who want a versatile everyday wearer, those who like clean and energetic scents, and those who just appreciate a good fragrance.</p>
+    
+    <h3>Product Specifications</h3>
+    <ul>
+        <li>Brand: IMPERIO</li>
+        <li>Fragrance Type: Eau de Parfum</li>
+        <li>Size: 100ml</li>
+        <li>Targeted Group: Men</li>
+        <li>Fragrance Family: Floral & Woody</li>
+        <li>Fragrance Note: Cardamom, Nutmeg, Cinnamon</li>
+    </ul>
+    
+    <h3>Exude confidence and charm like the world is yours for the taking with our classic Perfume; Avanti For Him</h3>
+    
+    <h3>Specifications</h3>
+    <ul>
+        <li>SKU: IM719PF318WEONAFAMZ</li>
+        <li>Weight (kg): 0.1</li>
+    </ul>
+</div>
+`
+    },
+
+]
+const newArrivall=()=>{
+newArrival.map((arriveCard,index)=>{
+  playStation.innerHTML+=`
+  <div class="col-sm-12 col-lg-4 rounded">
+      <div class="shadow-sm  card text-bg-dark border-0">
+        <img class=""  src="${arriveCard.firstImage}" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <div class="text-dark shadow-sm p-3">
+            <p class="h5 card-title flaot-bottom">${arriveCard.shortname} </p>
+            <small class="card-text text-dark">${arriveCard.shortDetails}</small><br>
+            <small class=" text-dark text-decoration-underline btn ps-0 border-0" onclick="arrive (${index})">Shop Now</small>
+          </p>
+        </div>
+        </div>
+      </div>
+      </div>`
+})
+}
+newArrivall()
   const add = (x) => {
     let cardData = allProduct[x]
     console.log(cardData)
     JSON.stringify(cardData)
     localStorage.setItem("productData", JSON.stringify(cardData))
+    window.location.href="./Cart/view.html"
   }
   const addCategory = (x) => {
     let cardData = cateGory[x]
     console.log(cardData)
     JSON.stringify(cardData)
     localStorage.setItem("productData", JSON.stringify(cardData))
+    window.location.href="./Cart/view.html"
   }
   const addHeadphone = (x) => {
     let cardData = headPhone[x]
     console.log(cardData)
     JSON.stringify(cardData)
     localStorage.setItem("productData", JSON.stringify(cardData))
+    window.location.href="./Cart/view.html"
   }
+  const addOurProduct = (x) => {
+    let cardData = addsProduct[x]
+    console.log(cardData)
+    JSON.stringify(cardData)
+    localStorage.setItem("productData", JSON.stringify(cardData))
+    window.location.href="./Cart/view.html"
+  }
+  const arrive = (x) => {
+    let cardData = newArrival[x]
+    console.log(cardData)
+    JSON.stringify(cardData)
+    localStorage.setItem("productData", JSON.stringify(cardData))
+    window.location.href="./Cart/view.html"
+  }
+  
 </script>
 
 </html>

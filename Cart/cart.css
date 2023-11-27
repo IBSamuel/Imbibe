@@ -1,0 +1,23 @@
+.sms{
+    display: none;
+}
+.sml{
+    display: block;
+}
+.dnone{
+    /* display: ; */
+}
+@media screen and (max-width:688px) {
+    .image{
+    width: 50px;
+    }
+    .sms{
+        display: block;
+    }
+    .sml{
+        display: none;
+    }
+    .dnone{
+        display: none;
+    }
+}

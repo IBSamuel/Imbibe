@@ -6,6 +6,7 @@
     <title>Add to cart</title>
     <link rel="shortcut icon" href="../Images/Imbibe Logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="../Main css/general.css">
+    <link rel="stylesheet" href="cart.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -29,13 +30,13 @@
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav fw-semibold mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item me-5">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item me-5">
-            <a class="nav-link active" href="#">About</a>
+            <a class="nav-link active" href="../About/About.html">About</a>
           </li>
           <li class="nav-item me-5">
-            <a class="nav-link active me-5" href="">SignUp</a>
+            <a class="nav-link active me-5" href="../Sign/Signup.html">SignUp</a>
           </li>
           <div class="me-5">
           </div>
@@ -47,7 +48,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link ms-5 border-bottom border-3"><i class="bi bi-cart3 h5"></i></a>
+            <a href="Cart.html" class="nav-link ms-5 border-bottom border-3"><i class="bi bi-cart3 h5"></i></a>
           </li>
         </ul>
       </div>
@@ -72,17 +73,22 @@
 <div class="m-1 row">
     <div class="col-lg-5 col-sm-12">
         <img class="w-100 rounded" id="mainImage" src="" alt="">
+        <div class="d-flex gap-3 text-center ">
+          <img class="w-25 shadow-sm sms" onclick="changeImageToSubFirst()" id="sublImageOne" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/6.jpg?2300" alt="">
+          <img class="w-25 shadow-sm sms" onclick="changeImageToSubThird()" id="sublImageTwo" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/6.jpg?2300" alt="">
+          <img class="w-25 shadow-sm sms" onclick="changeImageToSubSecond()" id="sublImageThree"  src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/8440622/6.jpg?2300" alt="">
+        </div>
     </div>
-    <div class="col-lg-2 col-sm-12">
+    <div class="col-lg-2 col-sm-12 ">
         <div class="text-center">
-            <div class="mb-2 mt-3">
-                <img class="w-75 rounded" id="subImageOne" src="" alt="">
+            <div class="mb-2 mt-3  sml">
+                <img class="rounded w-75 " onclick="changeImageToFirst()" id="subImageOne" src="" alt="">
             </div>
-            <div class="">
-                <img class="w-75 rounded" id="subImageTwo" src="" alt="">
+            <div class="sml">
+                <img class="w-75 rounded " onclick="changeImageToSecond()" id="subImageTwo" src="" alt="">
             </div>
-            <div class="">
-                <img class="w-75 mt-2 rounded" id="subImageThree" src="" alt="">
+            <div class="sml">
+                <img class="w-75 mt-2 rounded" onclick="changeImageToThird()" id="subImageThree" src="" alt="">
             </div>
         </div>
     </div>
@@ -97,17 +103,18 @@
         Calculated, operating system with binary arithmetic: 1 MB = 1024KB, 1 GB = 1024 MB;</small>
         <div>
           <br>
-            <div>
+            <div class="text-center">
                 <button class="h4 w-25 oranged border-0 text-light" onclick="subOne()">-</button>
                 <span class="text-center d-inline-block"><small class="fw-semibold h4" id="quantity">1</small></span>
                 <button class="h4 oranged border-0 w-25 oranged text-light" onclick="addOne()">+</button>
+                <button class="oranged text-white border-0 p-1" style="width: 230px;" onclick="addToCart()"> Add to cart</button>
             </div>
-            <button class="oranged text-white border-0 p-1 rounded w-50 "> Add to cart</button>
         </div>
         <br>
         <div class="border border-2 row rounded  ">
             <div class="col-3">
               <img class="w-100" src="https://static.thenounproject.com/png/429169-200.png" alt="">
+
             </div>
             <div class="col-9 mt-3">
               <small class="h4">Free Delivery</small><br>
@@ -135,30 +142,80 @@
 </div>
   </body>
   <script>
+    
+    cartObject=[]
     let newItems = JSON.parse(localStorage.getItem("productData"))
+    if (localStorage.chatInfor) {
+      cartObject = JSON.parse(localStorage.getItem("chatInfor"))
+    }
     console.log(newItems)
     const autoDisplay=()=>{
     mainCategory.innerText=newItems.category
     shortName.innerText=newItems.shortname
     realName.innerText=newItems.name
     amount.innerText=newItems.price
-    review.innerText=newItems.reviews
+    review.innerHTML=newItems.reviews
     shortInfo.innerText=newItems.shortDetails
     mainImage.src=newItems.firstImage
     subImageOne.src=newItems.secondImage
+    sublImageOne.src=newItems.secondImage
     subImageTwo.src=newItems.thirdImage
+    sublImageTwo.src=newItems.thirdImage
     subImageThree.src=newItems.fourthImage
+    sublImageThree.src=newItems.firstImage
     specifications.innerHTML=newItems.specifications
+  }
+  const addToCart=()=>{
+    neededArray={
+      shortName: newItems.shortname,
+      mainImage:newItems.firstImage,
+      amount:newItems.price,
+      quantity:quantity.innerHTML  
     }
+    cartObject.push(neededArray)
+   console.log(cartObject)
+   localStorage.setItem("chatInfor",JSON.stringify((cartObject)))
+   window.location.href="Cart.html"
+    
+  }
     autoDisplay()
     const addOne =()=>{
       quantity.innerHTML=Number(quantity.innerText)+1
-      localStorage.setItem("numberOfProduct", quantity.innerHTML)
     }
     const subOne =()=>{
       if(quantity.innerText>1){
         quantity.innerHTML=Number(quantity.innerText)-1
-        localStorage.setItem("numberOfProduct", quantity.innerHTML)
+      }
+    }
+    const changeImageToFirst=()=>{
+      if(mainImage.src=newItems.firstImage){
+        mainImage.src=newItems.secondImage
+      }
+    }
+    const changeImageToSecond=()=>{
+      if(mainImage.src=newItems.firstImage){
+        mainImage.src=newItems.thirdImage
+      }
+    }
+    const changeImageToThird=()=>{
+      if(mainImage.src=newItems.firstImage){
+        mainImage.src=newItems.fourthImage
+      }
+    }
+    // 
+    const changeImageToSubFirst=()=>{
+      if(mainImage.src=newItems.firstImage){
+        mainImage.src=newItems.secondImage
+      }
+    }
+    const changeImageToSubThird=()=>{
+      if(mainImage.src=newItems.firstImage){
+        mainImage.src=newItems.thirdImage
+      }
+    }
+    const changeImageToSubSecond=()=>{
+      if(mainImage.src=newItems.firstImage){
+        mainImage.src=newItems.fourthImage
       }
     }
     
